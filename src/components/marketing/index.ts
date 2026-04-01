@@ -1,0 +1,8 @@
+export { MarketingHeader } from './MarketingHeader'
+export { MobileNav } from './MobileNav'
+export { MarketingFooter } from './MarketingFooter'
+export { HeroSection } from './HeroSection'
+export { FeaturesSection } from './FeaturesSection'
+export { WhoItsForSection } from './WhoItsForSection'
+export { RegionsSection } from './RegionsSection'
+export { CTASection } from './CTASection'

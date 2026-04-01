@@ -1,0 +1,21 @@
+{
+  "name": "EdEquity AI",
+  "short_name": "EdEquity",
+  "description": "Culturally-adaptive K-12 learning platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f1e6",
+  "theme_color": "#a67c52",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

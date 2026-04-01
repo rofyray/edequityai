@@ -1,0 +1,678 @@
+import type { ModuleSeed } from '../types'
+
+export const GRADE_3_MATH: ModuleSeed[] = [
+  {
+    slug: 'grade3-math-multiplication-concepts',
+    title: 'Multiplication as Equal Groups',
+    description: 'Understand multiplication as finding the total number of objects in equal groups (3.OA.1)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['3.OA.1'],
+    content: {
+      intro: {
+        title: 'Multiplication as Equal Groups',
+        text: 'Have you ever set out plates for dinner? If there are 4 people and each person gets 1 plate, you need 4 plates. But what if each person gets 3 cookies? You could count them one by one, or you could use a faster way called multiplication. Multiplication helps us find the total when we have equal groups.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What Are Equal Groups?',
+          text: 'Equal groups means each group has the same number of objects. Imagine 3 baskets, and each basket holds 5 apples. Those are 3 equal groups of 5. If one basket had 4 apples and another had 6, the groups would not be equal. Multiplication only works with equal groups. When you see the word "each" in a problem, it often means you are dealing with equal groups. For example, "4 bags with 6 oranges each" means 4 equal groups of 6.',
+          keyVocabulary: ['equal groups', 'each', 'multiplication'],
+          example: '3 bags with 5 marbles each: Group 1 has 5, Group 2 has 5, Group 3 has 5.',
+        },
+        {
+          index: 1,
+          title: 'The Multiplication Symbol',
+          text: 'We use the times sign (×) to write a multiplication sentence. The first number tells how many groups, and the second number tells how many are in each group. For 3 groups of 5, we write 3 × 5. We read it as "three times five." The answer to a multiplication problem is called the product. 3 × 5 = 15, so 15 is the product. You can also think of 3 × 5 as adding 5 three times: 5 + 5 + 5 = 15.',
+          keyVocabulary: ['times sign', 'product', 'multiplication sentence', 'groups'],
+        },
+        {
+          index: 2,
+          title: 'Using Arrays to Show Multiplication',
+          text: 'An array is a way to arrange objects in equal rows and columns. If you place 4 rows of 3 dots, you have an array that shows 4 × 3. You can count all the dots to find the product: 12. Arrays help you see multiplication. The rows tell you the number of groups, and the columns tell you how many in each group. Arrays also show that the order does not change the product: 4 rows of 3 is the same total as 3 rows of 4.',
+          keyVocabulary: ['array', 'rows', 'columns', 'arrange'],
+        },
+        {
+          index: 3,
+          title: 'Multiplying with 0 and 1',
+          text: 'Two special rules make multiplication easier. First, any number times 1 equals that same number. 7 × 1 = 7 because one group of 7 is just 7. Second, any number times 0 equals 0. 5 × 0 = 0 because zero groups of 5 means there are no objects at all. These are called the identity property and the zero property. Knowing these rules helps you solve multiplication facts quickly without having to draw pictures or count.',
+          keyVocabulary: ['identity property', 'zero property', 'rule'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'There are 5 bags with 3 toys in each bag. How many toys in all? Write a multiplication sentence.', type: 'short-answer', correctAnswer: '15', hint: 'How many groups? How many in each group? Multiply.', explanation: '5 groups of 3 means 5 × 3 = 15. There are 15 toys in all.', standardCode: '3.OA.1' },
+        { index: 1, question: 'What is the product of 4 × 6?', type: 'short-answer', correctAnswer: '24', hint: 'You can add 6 four times: 6 + 6 + 6 + 6.', explanation: '4 × 6 = 24. Four groups of 6 equals 24.', standardCode: '3.OA.1' },
+        { index: 2, question: 'Which multiplication sentence matches this: 2 rows of 7 stars?', type: 'multiple-choice', options: ['2 + 7 = 9', '2 × 7 = 14', '7 × 7 = 49', '7 − 2 = 5'], correctAnswer: '2 × 7 = 14', hint: 'Rows mean groups. Use the times sign.', explanation: '2 rows of 7 is 2 equal groups of 7, which is 2 × 7 = 14.', standardCode: '3.OA.1' },
+        { index: 3, question: '9 × 0 = ?', type: 'short-answer', correctAnswer: '0', hint: 'Any number times zero equals ...', explanation: '9 × 0 = 0. Zero groups of anything means nothing at all.', standardCode: '3.OA.1' },
+        { index: 4, question: 'Maria has 3 plates. She puts 4 crackers on each plate. How many crackers does she have?', type: 'short-answer', correctAnswer: '12', hint: 'Think: 3 groups of 4.', explanation: '3 × 4 = 12. Three plates with 4 crackers each equals 12 crackers.', standardCode: '3.OA.1' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'There are 6 cups with 2 pencils in each cup. How many pencils are there?', type: 'short-answer', correctAnswer: '12', standardCode: '3.OA.1' },
+          { question: 'What is 8 × 1?', type: 'short-answer', correctAnswer: '8', standardCode: '3.OA.1' },
+          { question: 'Which shows 3 × 5?', type: 'multiple-choice', options: ['3 groups of 3', '5 groups of 3', '3 groups of 5', '5 groups of 5'], correctAnswer: '3 groups of 5', standardCode: '3.OA.1' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-division-concepts',
+    title: 'Division as Equal Sharing',
+    description: 'Understand division as splitting a total into equal groups or equal shares (3.OA.2)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['3.OA.2'],
+    content: {
+      intro: {
+        title: 'Division as Equal Sharing',
+        text: 'Imagine you have 12 strawberries and want to share them equally among 3 friends. How many does each friend get? Division helps us answer that question. Division is the opposite of multiplication — instead of putting groups together, we are splitting a total into equal parts.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What is Division?',
+          text: 'Division means splitting a number into equal groups. When you divide 12 by 3, you are asking: if I make 3 equal groups from 12 objects, how many are in each group? We use the division sign (÷) to write division. 12 ÷ 3 = 4 means 12 split into 3 equal groups gives 4 in each group. The answer in division is called the quotient. So in 12 ÷ 3 = 4, the quotient is 4.',
+          keyVocabulary: ['division', 'divide', 'equal groups', 'quotient', 'division sign'],
+        },
+        {
+          index: 1,
+          title: 'Two Ways to Think About Division',
+          text: 'There are two ways to divide. The first way is equal sharing: you know the number of groups and want to find how many in each group. Example: 15 stickers shared among 5 friends — each friend gets 3. The second way is equal grouping: you know how many go in each group and want to find how many groups. Example: 15 stickers, 5 in each bag — you can fill 3 bags. Both problems are solved by 15 ÷ 5 = 3.',
+          keyVocabulary: ['equal sharing', 'equal grouping', 'share'],
+          example: 'Sharing: 20 grapes among 4 kids = 5 each. Grouping: 20 grapes, 4 per bowl = 5 bowls.',
+        },
+        {
+          index: 2,
+          title: 'Division and Multiplication Are Related',
+          text: 'Division and multiplication are fact family partners. If you know 4 × 3 = 12, then you also know 12 ÷ 3 = 4 and 12 ÷ 4 = 3. This is very helpful! When you see a division problem, think of the related multiplication fact. To solve 18 ÷ 6, ask yourself: what number times 6 equals 18? The answer is 3, so 18 ÷ 6 = 3.',
+          keyVocabulary: ['fact family', 'related facts', 'inverse'],
+        },
+        {
+          index: 3,
+          title: 'Dividing with 1 and the Number Itself',
+          text: 'Special division rules are useful. Any number divided by 1 equals itself: 9 ÷ 1 = 9, because one group holds all 9. Any number divided by itself equals 1: 9 ÷ 9 = 1, because splitting 9 into 9 groups puts 1 in each group. We never divide by 0 — it is not possible to split things into zero groups. Remembering these rules saves time.',
+          keyVocabulary: ['divide by 1', 'divide by itself', 'undefined'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '12 ÷ 4 = ?', type: 'short-answer', correctAnswer: '3', hint: 'Think: what number times 4 equals 12?', explanation: '12 ÷ 4 = 3. If you split 12 into 4 equal groups, each group has 3.', standardCode: '3.OA.2' },
+        { index: 1, question: '18 stickers are shared equally among 3 children. How many does each child get?', type: 'short-answer', correctAnswer: '6', hint: '18 divided by 3. Think: 3 × ? = 18.', explanation: '18 ÷ 3 = 6. Each child gets 6 stickers.', standardCode: '3.OA.2' },
+        { index: 2, question: 'Which division fact is related to 5 × 4 = 20?', type: 'multiple-choice', options: ['20 ÷ 5 = 4', '20 ÷ 10 = 2', '5 ÷ 4 = 1', '20 − 5 = 15'], correctAnswer: '20 ÷ 5 = 4', hint: 'Use the same three numbers from the multiplication fact.', explanation: 'Since 5 × 4 = 20, the related division facts are 20 ÷ 5 = 4 and 20 ÷ 4 = 5.', standardCode: '3.OA.2' },
+        { index: 3, question: '7 ÷ 1 = ?', type: 'short-answer', correctAnswer: '7', hint: 'Any number divided by 1 equals ...', explanation: '7 ÷ 1 = 7. One group of 7 is still 7.', standardCode: '3.OA.2' },
+        { index: 4, question: 'You have 24 crayons and put 6 in each box. How many boxes do you fill?', type: 'short-answer', correctAnswer: '4', hint: '24 ÷ 6 = ? Think: 6 × ? = 24.', explanation: '24 ÷ 6 = 4. You fill 4 boxes with 6 crayons each.', standardCode: '3.OA.2' },
+      ],
+      assessment: {
+        questions: [
+          { question: '21 ÷ 7 = ?', type: 'short-answer', correctAnswer: '3', standardCode: '3.OA.2' },
+          { question: '16 cookies are shared equally among 4 friends. How many does each friend get?', type: 'short-answer', correctAnswer: '4', standardCode: '3.OA.2' },
+          { question: 'Which is a related fact for 30 ÷ 6 = 5?', type: 'multiple-choice', options: ['6 × 5 = 30', '30 + 6 = 36', '5 + 6 = 11', '6 − 5 = 1'], correctAnswer: '6 × 5 = 30', standardCode: '3.OA.2' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-word-problems-multiply-divide',
+    title: 'Word Problems with Multiply and Divide',
+    description: 'Solve real-world multiplication and division word problems within 100 (3.OA.3)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['3.OA.3'],
+    content: {
+      intro: {
+        title: 'Solving Word Problems with Multiplication and Division',
+        text: 'Math is everywhere — at the store, in the kitchen, and on the playground. Word problems tell a story that you solve with math. In this module you will learn how to decide when to multiply and when to divide, then write a number sentence and find the answer.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Spotting Multiplication Problems',
+          text: 'Multiplication word problems usually tell you about equal groups being put together. Look for clue words like "each," "every," "per," and "times." Example: "A farmer plants 7 rows of corn with 8 plants in each row. How many plants in all?" You know the number of groups (7 rows) and how many in each group (8 plants), so you multiply: 7 × 8 = 56 plants. Always ask yourself: do I know the groups and the size of each group?',
+          keyVocabulary: ['clue words', 'each', 'every', 'per', 'in all'],
+          example: '5 shelves with 6 books each → 5 × 6 = 30 books.',
+        },
+        {
+          index: 1,
+          title: 'Spotting Division Problems',
+          text: 'Division word problems tell you the total and ask you to split it up. Look for clue words like "share equally," "split," "each gets," and "how many groups." Example: "Maya has 24 beads. She puts 8 beads on each bracelet. How many bracelets can she make?" You know the total (24) and how many per group (8), so you divide: 24 ÷ 8 = 3 bracelets. Another kind of problem gives the total and the number of groups: "24 beads shared equally among 6 friends" means 24 ÷ 6 = 4 beads each.',
+          keyVocabulary: ['share equally', 'split', 'how many groups', 'total'],
+        },
+        {
+          index: 2,
+          title: 'Drawing a Picture to Help',
+          text: 'When a word problem seems tricky, draw a picture. For multiplication, draw circles for groups and dots inside for objects. For division, draw the total objects and circle them into equal sets. A bar model can also help: draw a long bar for the total and break it into equal parts. Pictures help you see the problem before you solve it. After drawing, write the number sentence and find the answer.',
+          keyVocabulary: ['bar model', 'picture', 'number sentence', 'equal sets'],
+        },
+        {
+          index: 3,
+          title: 'Checking Your Answer',
+          text: 'Always check your work. For a multiplication problem, you can use division to check. If you found 6 × 4 = 24, check by dividing: 24 ÷ 4 should equal 6. For a division problem, multiply to check. If you found 35 ÷ 5 = 7, check: 5 × 7 should equal 35. You can also re-read the problem to make sure your answer makes sense. Does the number fit the story? Checking keeps mistakes away.',
+          keyVocabulary: ['check', 'inverse operation', 'makes sense'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'A baker makes 6 trays of muffins with 8 muffins on each tray. How many muffins did the baker make?', type: 'short-answer', correctAnswer: '48', hint: 'Find the number of groups and how many in each group, then multiply.', explanation: '6 trays × 8 muffins = 48 muffins. This is a multiplication problem because you have equal groups.', standardCode: '3.OA.3' },
+        { index: 1, question: 'Sam has 36 baseball cards. He puts them into piles of 9. How many piles does he make?', type: 'short-answer', correctAnswer: '4', hint: 'You know the total and the group size. Divide.', explanation: '36 ÷ 9 = 4 piles. You divide because you are splitting the total into equal groups.', standardCode: '3.OA.3' },
+        { index: 2, question: 'There are 5 vans. Each van holds 7 passengers. How many passengers can ride in all?', type: 'short-answer', correctAnswer: '35', hint: '5 groups of 7.', explanation: '5 × 7 = 35. Five vans with 7 passengers each carry 35 passengers total.', standardCode: '3.OA.3' },
+        { index: 3, question: '42 pencils are shared equally among 7 students. How many pencils does each student get?', type: 'multiple-choice', options: ['5', '6', '7', '8'], correctAnswer: '6', hint: '42 ÷ 7 = ?', explanation: '42 ÷ 7 = 6. Each student gets 6 pencils.', standardCode: '3.OA.3' },
+        { index: 4, question: 'A store has 9 boxes. Each box has 3 toy cars. How many toy cars are in the store?', type: 'short-answer', correctAnswer: '27', hint: 'Multiply the number of boxes by the number in each box.', explanation: '9 × 3 = 27. Nine boxes of 3 toy cars equals 27 toy cars.', standardCode: '3.OA.3' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'A classroom has 4 tables. Each table seats 5 students. How many students can sit down?', type: 'short-answer', correctAnswer: '20', standardCode: '3.OA.3' },
+          { question: '56 apples are packed equally into 8 bags. How many apples are in each bag?', type: 'short-answer', correctAnswer: '7', standardCode: '3.OA.3' },
+          { question: 'Which operation solves this: "3 friends share 27 stickers equally"?', type: 'multiple-choice', options: ['Addition', 'Subtraction', 'Multiplication', 'Division'], correctAnswer: 'Division', standardCode: '3.OA.3' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-patterns-in-arithmetic',
+    title: 'Patterns in Arithmetic',
+    description: 'Identify and explain patterns in addition and multiplication tables (3.OA.9)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['3.OA.9'],
+    content: {
+      intro: {
+        title: 'Patterns in Arithmetic',
+        text: 'Patterns are things that repeat or follow a rule. In math, patterns hide inside addition and multiplication tables. When you spot a pattern, you can predict what comes next without counting everything from scratch. Let us become pattern detectives!',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Patterns in Addition Tables',
+          text: 'Look at a row of the addition table: 0 + 4 = 4, 1 + 4 = 5, 2 + 4 = 6, 3 + 4 = 7. Notice the answers go up by 1 each time. That happens because you are adding one more each step. Another pattern: the sums on the diagonal of the addition table are always even when both addends are even, and always even when both are odd. If one addend is even and the other is odd, the sum is always odd. Recognizing these patterns makes addition faster.',
+          keyVocabulary: ['addition table', 'pattern', 'sum', 'even', 'odd'],
+        },
+        {
+          index: 1,
+          title: 'Patterns When Multiplying by 2, 5, and 10',
+          text: 'The multiplication table is full of patterns. Multiplying by 2 always gives an even number: 2, 4, 6, 8, 10, 12. Multiplying by 5 always ends in 0 or 5: 5, 10, 15, 20, 25. Multiplying by 10 always ends in 0: 10, 20, 30, 40. These patterns help you learn your facts quickly. If a product ends in 0, it could be a multiple of 5 or 10. If a product is even, it is a multiple of 2.',
+          keyVocabulary: ['even number', 'multiple', 'ends in'],
+          example: 'Multiples of 5: 5, 10, 15, 20, 25, 30 — they always end in 0 or 5.',
+        },
+        {
+          index: 2,
+          title: 'Patterns When Multiplying by 9',
+          text: 'The 9s have a cool pattern. Look at the products: 9, 18, 27, 36, 45, 54, 63, 72, 81, 90. The tens digit goes up by 1 (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) and the ones digit goes down by 1 (9, 8, 7, 6, 5, 4, 3, 2, 1, 0). Also, the two digits of every product add up to 9: 1 + 8 = 9, 2 + 7 = 9, 3 + 6 = 9. You can use this pattern to check if your answer is correct when multiplying by 9.',
+          keyVocabulary: ['tens digit', 'ones digit', 'digit sum'],
+        },
+        {
+          index: 3,
+          title: 'The Commutative Property',
+          text: 'One of the most important patterns in multiplication is that you can switch the order of the numbers and the product stays the same. 3 × 7 = 21 and 7 × 3 = 21. This is called the commutative property. It means you only need to learn about half the multiplication table! If you already know 8 × 3 = 24, then you also know 3 × 8 = 24 without any extra work.',
+          keyVocabulary: ['commutative property', 'order', 'switch'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'What pattern do you notice in the multiples of 5: 5, 10, 15, 20, 25?', type: 'multiple-choice', options: ['They are all odd', 'They always end in 0 or 5', 'They are all less than 20', 'They go up by 10'], correctAnswer: 'They always end in 0 or 5', hint: 'Look at the last digit of each number.', explanation: 'Multiples of 5 always end in 0 or 5. This is a useful pattern for quick multiplication.', standardCode: '3.OA.9' },
+        { index: 1, question: 'If 6 × 4 = 24, what is 4 × 6?', type: 'short-answer', correctAnswer: '24', hint: 'Think about the commutative property — you can switch the numbers.', explanation: '4 × 6 = 24. The commutative property says switching the order does not change the product.', standardCode: '3.OA.9' },
+        { index: 2, question: 'The products of 9 are 9, 18, 27, 36, ___. What comes next?', type: 'short-answer', correctAnswer: '45', hint: 'The tens digit goes up by 1, the ones digit goes down by 1.', explanation: 'After 36, the tens digit goes from 3 to 4 and the ones digit goes from 6 to 5, giving 45.', standardCode: '3.OA.9' },
+        { index: 3, question: 'Is the product of 2 × 7 even or odd?', type: 'multiple-choice', options: ['Even', 'Odd'], correctAnswer: 'Even', hint: 'Any number multiplied by 2 gives what kind of number?', explanation: '2 × 7 = 14, which is even. Multiplying any number by 2 always gives an even product.', standardCode: '3.OA.9' },
+        { index: 4, question: 'In the multiples of 10 (10, 20, 30, 40, ...), what digit do they all end with?', type: 'short-answer', correctAnswer: '0', hint: 'Look at the ones place in each number.', explanation: 'All multiples of 10 end in 0. This pattern makes it easy to recognize multiples of 10.', standardCode: '3.OA.9' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'What is the next number in this pattern: 2, 4, 6, 8, ___?', type: 'short-answer', correctAnswer: '10', standardCode: '3.OA.9' },
+          { question: 'The digits of 9 × 4 = 36 add up to what number?', type: 'short-answer', correctAnswer: '9', standardCode: '3.OA.9' },
+          { question: 'If 7 × 8 = 56, what is 8 × 7?', type: 'short-answer', correctAnswer: '56', standardCode: '3.OA.9' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-unit-fractions',
+    title: 'Unit Fractions',
+    description: 'Understand fractions 1/2, 1/3, 1/4, and other unit fractions as equal parts of a whole (3.NF.1)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Number & Operations — Fractions',
+    standardCodes: ['3.NF.1'],
+    content: {
+      intro: {
+        title: 'Understanding Unit Fractions',
+        text: 'Have you ever split a sandwich in half to share with a friend? Each person gets one of two equal pieces. That piece is called one half, and we write it as 1/2. Fractions are numbers that describe parts of a whole. Today we will learn about unit fractions — fractions that have a 1 on top.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What Is a Fraction?',
+          text: 'A fraction describes equal parts of a whole. The bottom number is called the denominator. It tells how many equal parts the whole is divided into. The top number is called the numerator. It tells how many of those parts you are talking about. In the fraction 1/4, the denominator 4 means the whole is cut into 4 equal pieces, and the numerator 1 means you have one of those pieces. The parts must be equal — if a pizza is cut into uneven slices, those slices are not true fourths.',
+          keyVocabulary: ['fraction', 'numerator', 'denominator', 'equal parts', 'whole'],
+          example: 'A pizza cut into 4 equal slices: each slice is 1/4 of the pizza.',
+        },
+        {
+          index: 1,
+          title: 'Unit Fractions: 1/2, 1/3, 1/4',
+          text: 'A unit fraction has 1 as its numerator. It represents one equal part. One half (1/2) means a whole split into 2 equal parts and you have 1 part. One third (1/3) means a whole split into 3 equal parts and you have 1 part. One fourth or one quarter (1/4) means a whole split into 4 equal parts and you have 1 part. Notice that the more parts you split a whole into, the smaller each part becomes. One fourth is smaller than one half because cutting into 4 pieces makes each piece smaller than cutting into 2.',
+          keyVocabulary: ['unit fraction', 'one half', 'one third', 'one fourth', 'quarter'],
+        },
+        {
+          index: 2,
+          title: 'More Unit Fractions: 1/6 and 1/8',
+          text: 'We can cut a whole into even more equal parts. One sixth (1/6) means the whole is divided into 6 equal pieces and you have 1 piece. One eighth (1/8) means the whole is divided into 8 equal pieces and you have 1 piece. A chocolate bar split among 8 friends gives each person 1/8 of the bar. The bigger the denominator, the more pieces there are, and the smaller each piece is. So 1/8 is smaller than 1/6, and 1/6 is smaller than 1/4.',
+          keyVocabulary: ['one sixth', 'one eighth', 'bigger denominator', 'smaller piece'],
+        },
+        {
+          index: 3,
+          title: 'Building Non-Unit Fractions from Unit Fractions',
+          text: 'Once you understand unit fractions, you can build other fractions. The fraction 3/4 means three copies of 1/4. You take one fourth, then another fourth, then another fourth — that is three fourths. The fraction 2/3 means two copies of 1/3. Every fraction is made by repeating its unit fraction. This idea will help you add fractions later on. Remember: the denominator stays the same because the size of each part does not change. Only the numerator changes to show how many parts you have.',
+          keyVocabulary: ['non-unit fraction', 'copies', 'build'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'A rectangle is divided into 3 equal parts. One part is shaded. What fraction is shaded?', type: 'short-answer', correctAnswer: '1/3', hint: 'How many equal parts? How many are shaded?', explanation: 'The whole is split into 3 equal parts and 1 is shaded, so the fraction is 1/3.', standardCode: '3.NF.1' },
+        { index: 1, question: 'In the fraction 1/4, what does the 4 tell you?', type: 'multiple-choice', options: ['You have 4 pieces', 'The whole is cut into 4 equal parts', 'You ate 4 pieces', 'There are 4 wholes'], correctAnswer: 'The whole is cut into 4 equal parts', hint: 'The bottom number is the denominator.', explanation: 'The denominator 4 tells you the whole is divided into 4 equal parts.', standardCode: '3.NF.1' },
+        { index: 2, question: 'Which is larger: 1/2 or 1/8?', type: 'multiple-choice', options: ['1/2', '1/8', 'They are equal'], correctAnswer: '1/2', hint: 'When the whole is cut into fewer pieces, each piece is bigger.', explanation: '1/2 is larger because cutting into 2 parts makes bigger pieces than cutting into 8 parts.', standardCode: '3.NF.1' },
+        { index: 3, question: 'How many copies of 1/4 make the fraction 3/4?', type: 'short-answer', correctAnswer: '3', hint: 'The numerator tells you how many unit fraction copies.', explanation: '3/4 is made of 3 copies of the unit fraction 1/4.', standardCode: '3.NF.1' },
+        { index: 4, question: 'A pie is cut into 6 equal slices. You eat 1 slice. What fraction of the pie did you eat?', type: 'short-answer', correctAnswer: '1/6', hint: 'Denominator = total slices, numerator = slices you ate.', explanation: 'You ate 1 out of 6 equal slices, so you ate 1/6 of the pie.', standardCode: '3.NF.1' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'A circle is divided into 8 equal parts. One part is colored. What fraction is colored?', type: 'short-answer', correctAnswer: '1/8', standardCode: '3.NF.1' },
+          { question: 'Which is smaller: 1/3 or 1/6?', type: 'multiple-choice', options: ['1/3', '1/6', 'They are equal'], correctAnswer: '1/6', standardCode: '3.NF.1' },
+          { question: 'How many copies of 1/3 make 2/3?', type: 'short-answer', correctAnswer: '2', standardCode: '3.NF.1' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-fractions-number-line',
+    title: 'Fractions on a Number Line',
+    description: 'Represent and locate fractions on a number line between 0 and 1 (3.NF.2)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Number & Operations — Fractions',
+    standardCodes: ['3.NF.2'],
+    content: {
+      intro: {
+        title: 'Fractions on a Number Line',
+        text: 'You already know how to find whole numbers like 0, 1, 2, and 3 on a number line. But what about the spaces between whole numbers? Fractions live in those spaces! Placing fractions on a number line helps us see their size and compare them.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'The Number Line from 0 to 1',
+          text: 'Start by drawing a number line with 0 on the left and 1 on the right. The distance from 0 to 1 is one whole. To show halves, divide that distance into 2 equal parts. The point in the middle is 1/2. To show fourths, divide the distance into 4 equal parts. The first mark is 1/4, the second mark is 2/4 (which is the same as 1/2), and the third mark is 3/4. Each mark shows a fraction between 0 and 1.',
+          keyVocabulary: ['number line', 'distance', 'whole', 'mark', 'point'],
+          example: '0 --|-- 1/4 --|-- 2/4 --|-- 3/4 --|-- 1 (fourths on a number line)',
+        },
+        {
+          index: 1,
+          title: 'Placing Unit Fractions',
+          text: 'To place 1/3 on a number line, divide the space from 0 to 1 into 3 equal parts. The first mark is at 1/3. To place 1/6, divide the space into 6 equal parts; the first mark is 1/6. Notice that 1/6 is closer to 0 than 1/3 is. That makes sense because 1/6 is a smaller fraction. A fraction with a larger denominator means more parts, so each part takes up less space on the number line.',
+          keyVocabulary: ['place', 'closer to 0', 'divide into equal parts'],
+        },
+        {
+          index: 2,
+          title: 'Comparing Fractions on the Number Line',
+          text: 'The number line makes it easy to compare fractions. A fraction farther to the right is greater. A fraction farther to the left is less. For example, on a number line divided into fourths, 3/4 is to the right of 1/4, so 3/4 > 1/4. You can also compare fractions with different denominators by placing them on the same number line. Since 1/2 = 2/4, the point for 1/2 and the point for 2/4 land in the exact same spot.',
+          keyVocabulary: ['compare', 'greater than', 'less than', 'equivalent fractions'],
+        },
+        {
+          index: 3,
+          title: 'Whole Numbers as Fractions on the Number Line',
+          text: 'Whole numbers are fractions too! The number 0 can be written as 0/4 because zero fourths means no parts. The number 1 can be written as 4/4 because four fourths make one whole. On a thirds number line, 0 = 0/3 and 1 = 3/3. When the numerator and the denominator are the same, the fraction equals 1. When the numerator is 0, the fraction equals 0. Understanding this helps you see that fractions and whole numbers are part of the same number system.',
+          keyVocabulary: ['whole number as fraction', '0/4', '4/4', 'same number system'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'A number line goes from 0 to 1 and is split into 4 equal parts. What fraction is at the first mark?', type: 'short-answer', correctAnswer: '1/4', hint: 'The first mark is one part out of four.', explanation: 'Dividing 0 to 1 into 4 equal parts puts the first mark at 1/4.', standardCode: '3.NF.2' },
+        { index: 1, question: 'Where does 3/3 land on a number line?', type: 'multiple-choice', options: ['At 0', 'Between 0 and 1', 'At 1', 'After 1'], correctAnswer: 'At 1', hint: 'When the numerator equals the denominator, the fraction equals ...', explanation: '3/3 = 1. Three thirds make one whole, so it lands at the 1 mark.', standardCode: '3.NF.2' },
+        { index: 2, question: 'Which is farther to the right on a number line: 1/4 or 3/4?', type: 'multiple-choice', options: ['1/4', '3/4', 'They are the same'], correctAnswer: '3/4', hint: 'A bigger fraction is farther right.', explanation: '3/4 is greater than 1/4 so it is farther to the right on the number line.', standardCode: '3.NF.2' },
+        { index: 3, question: 'A number line is divided into 6 equal parts from 0 to 1. What fraction names the third mark?', type: 'short-answer', correctAnswer: '3/6', hint: 'Count the marks: first is 1/6, second is 2/6, third is ...', explanation: 'The third mark on a sixths number line is 3/6, which is also equal to 1/2.', standardCode: '3.NF.2' },
+        { index: 4, question: 'What fraction equals 0 on any number line?', type: 'short-answer', correctAnswer: '0', hint: 'Zero parts of anything is still zero.', explanation: '0/2, 0/3, 0/4 — they all equal 0. Zero parts is no parts at all.', standardCode: '3.NF.2' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'A number line from 0 to 1 is split into 3 equal parts. What fraction is at the second mark?', type: 'short-answer', correctAnswer: '2/3', standardCode: '3.NF.2' },
+          { question: 'Which fraction is closer to 0: 1/2 or 1/8?', type: 'multiple-choice', options: ['1/2', '1/8', 'They are the same distance'], correctAnswer: '1/8', standardCode: '3.NF.2' },
+          { question: 'What whole number does 4/4 equal?', type: 'short-answer', correctAnswer: '1', standardCode: '3.NF.2' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-multiplication-facts-fluency',
+    title: 'Multiplication Facts Fluency',
+    description: 'Fluently multiply within 100 using strategies such as the relationship between multiplication and division (3.OA.7)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['3.OA.7'],
+    content: {
+      intro: {
+        title: 'Multiplication Facts Fluency',
+        text: 'Being fluent with multiplication facts means you can find the answer quickly and accurately. Just like reading — at first you sounded out every letter, but now you read whole words in a flash. Multiplication fluency works the same way. The more you practice, the faster the answers come to mind.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Strategies for Learning the Facts',
+          text: 'You do not have to memorize every fact by brute force. Strategies make it easier. For the 2s facts, think of doubles: 2 × 7 is the same as 7 + 7 = 14. For the 5s facts, count by fives. For the 9s, use the fingers trick or the pattern where the digits add up to 9. For the 4s, double the 2s fact: 4 × 6 = 2 × 6 doubled = 12 doubled = 24. Building on facts you already know is the smartest path to fluency.',
+          keyVocabulary: ['fluency', 'strategy', 'doubles', 'count by fives', 'fingers trick'],
+          example: '4 × 7: double 2 × 7 = 14, then double 14 = 28. So 4 × 7 = 28.',
+        },
+        {
+          index: 1,
+          title: 'The Tough Facts: 6s, 7s, and 8s',
+          text: 'The hardest facts to remember usually involve 6, 7, and 8. Here is a secret: by the time you know your 0s, 1s, 2s, 3s, 4s, 5s, 9s, and 10s, there are only a few facts left! The remaining facts are 6 × 6 = 36, 6 × 7 = 42, 6 × 8 = 48, 7 × 7 = 49, 7 × 8 = 56, and 8 × 8 = 64. Practice these six facts with flashcards or games until they stick. Remember 5-6-7-8: 56 = 7 × 8. That rhyme helps many students.',
+          keyVocabulary: ['tough facts', 'flashcards', 'rhyme'],
+        },
+        {
+          index: 2,
+          title: 'Using the Distributive Property',
+          text: 'If you forget a fact, break it apart. 7 × 8 can be split into 5 × 8 plus 2 × 8 because 5 + 2 = 7. That gives 40 + 16 = 56. This is the distributive property: you distribute the multiplication over addition. Another example: 6 × 9 = 6 × 10 minus 6 × 1 = 60 − 6 = 54. Breaking apart facts is a powerful backup strategy.',
+          keyVocabulary: ['distributive property', 'break apart', 'backup strategy'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '7 × 8 = ?', type: 'short-answer', correctAnswer: '56', hint: 'Think: 5-6-7-8. Or break it apart: 5 × 8 + 2 × 8.', explanation: '7 × 8 = 56. You can remember "5, 6, 7, 8" or use the distributive property.', standardCode: '3.OA.7' },
+        { index: 1, question: '9 × 6 = ?', type: 'short-answer', correctAnswer: '54', hint: 'Try 10 × 6 minus 1 × 6.', explanation: '9 × 6 = 54. Using the strategy: 10 × 6 = 60, minus 6 = 54.', standardCode: '3.OA.7' },
+        { index: 2, question: 'What strategy could help you find 4 × 9?', type: 'multiple-choice', options: ['Double the 2 × 9 fact', 'Count by 3s', 'Add 4 + 9', 'Subtract 4 from 9'], correctAnswer: 'Double the 2 × 9 fact', hint: '4 is double 2. So 4 × 9 is double of 2 × 9.', explanation: '2 × 9 = 18, and doubling gives 36. So 4 × 9 = 36. Doubling a known fact is a great strategy.', standardCode: '3.OA.7' },
+        { index: 3, question: '8 × 8 = ?', type: 'short-answer', correctAnswer: '64', hint: 'This is a square number. Try 8 × 4 doubled.', explanation: '8 × 8 = 64. You can think of it as 8 × 4 = 32, then 32 + 32 = 64.', standardCode: '3.OA.7' },
+        { index: 4, question: '6 × 7 = ?', type: 'short-answer', correctAnswer: '42', hint: 'Break apart: 5 × 7 + 1 × 7.', explanation: '6 × 7 = 42. Using the distributive property: 5 × 7 = 35 plus 1 × 7 = 7 gives 42.', standardCode: '3.OA.7' },
+      ],
+      assessment: {
+        questions: [
+          { question: '9 × 8 = ?', type: 'short-answer', correctAnswer: '72', standardCode: '3.OA.7' },
+          { question: '7 × 7 = ?', type: 'short-answer', correctAnswer: '49', standardCode: '3.OA.7' },
+          { question: 'Which shows a way to break apart 6 × 8?', type: 'multiple-choice', options: ['6 + 8 = 14', '3 × 8 + 3 × 8', '6 × 6 + 2', '8 − 6 = 2'], correctAnswer: '3 × 8 + 3 × 8', standardCode: '3.OA.7' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-division-facts-fluency',
+    title: 'Division Facts Fluency',
+    description: 'Fluently divide within 100 using the relationship between multiplication and division (3.OA.7)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['3.OA.7'],
+    content: {
+      intro: {
+        title: 'Division Facts Fluency',
+        text: 'If you can multiply, you can divide! Division is the opposite of multiplication, and knowing your multiplication facts is the key to becoming fluent with division. In this module you will practice recalling division facts quickly by thinking of the related multiplication fact.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Think Multiplication to Divide',
+          text: 'The fastest way to solve a division problem is to think of the related multiplication fact. For 36 ÷ 9, ask yourself: 9 times what equals 36? Since 9 × 4 = 36, you know 36 ÷ 9 = 4. For 56 ÷ 7, think: 7 times what equals 56? Since 7 × 8 = 56, then 56 ÷ 7 = 8. This "think multiplication" strategy turns every division fact into a multiplication fact you already know.',
+          keyVocabulary: ['think multiplication', 'related fact', 'inverse'],
+          example: '48 ÷ 6 = ? Think: 6 × ? = 48. Since 6 × 8 = 48, the answer is 8.',
+        },
+        {
+          index: 1,
+          title: 'Fact Families Strengthen Fluency',
+          text: 'A fact family is a set of related multiplication and division facts that use the same three numbers. For example, the numbers 3, 7, and 21 form this fact family: 3 × 7 = 21, 7 × 3 = 21, 21 ÷ 3 = 7, 21 ÷ 7 = 3. Learning one multiplication fact gives you three other facts for free. Practice writing fact families to build speed and confidence with division.',
+          keyVocabulary: ['fact family', 'related facts', 'three numbers'],
+        },
+        {
+          index: 2,
+          title: 'Special Division Rules',
+          text: 'Remember these helpful rules. Any number divided by 1 equals itself: 8 ÷ 1 = 8. Any number divided by itself equals 1: 8 ÷ 8 = 1. Zero divided by any number (except 0) is 0: 0 ÷ 5 = 0, because zero split into groups still gives nothing. You can never divide by 0. These shortcuts speed up your work and reduce the number of facts you need to memorize.',
+          keyVocabulary: ['divide by 1', 'divide by itself', 'zero divided'],
+        },
+        {
+          index: 3,
+          title: 'Practice for Speed',
+          text: 'Fluency means getting the right answer quickly. Timed practice, flashcard games, and partner quizzes all help build speed. Start with the easier facts (dividing by 1, 2, 5, and 10) and work up to the harder ones (dividing by 6, 7, 8, and 9). When you stumble on a fact, pause and think of the related multiplication fact. With daily practice, even the hardest division facts will become automatic.',
+          keyVocabulary: ['timed practice', 'flashcards', 'automatic'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '54 ÷ 9 = ?', type: 'short-answer', correctAnswer: '6', hint: 'Think: 9 × ? = 54.', explanation: '9 × 6 = 54, so 54 ÷ 9 = 6.', standardCode: '3.OA.7' },
+        { index: 1, question: '48 ÷ 8 = ?', type: 'short-answer', correctAnswer: '6', hint: 'Think: 8 × ? = 48.', explanation: '8 × 6 = 48, so 48 ÷ 8 = 6.', standardCode: '3.OA.7' },
+        { index: 2, question: 'Which multiplication fact helps you solve 63 ÷ 7?', type: 'multiple-choice', options: ['7 × 7 = 49', '7 × 8 = 56', '7 × 9 = 63', '7 × 6 = 42'], correctAnswer: '7 × 9 = 63', hint: '7 times what equals 63?', explanation: 'Since 7 × 9 = 63, we know 63 ÷ 7 = 9.', standardCode: '3.OA.7' },
+        { index: 3, question: '0 ÷ 4 = ?', type: 'short-answer', correctAnswer: '0', hint: 'Zero split into any number of groups gives ...', explanation: '0 ÷ 4 = 0. Zero divided by any nonzero number is always 0.', standardCode: '3.OA.7' },
+        { index: 4, question: '72 ÷ 8 = ?', type: 'short-answer', correctAnswer: '9', hint: 'Think: 8 × ? = 72.', explanation: '8 × 9 = 72, so 72 ÷ 8 = 9.', standardCode: '3.OA.7' },
+      ],
+      assessment: {
+        questions: [
+          { question: '81 ÷ 9 = ?', type: 'short-answer', correctAnswer: '9', standardCode: '3.OA.7' },
+          { question: '42 ÷ 6 = ?', type: 'short-answer', correctAnswer: '7', standardCode: '3.OA.7' },
+          { question: 'Which fact family goes with 5, 8, and 40?', type: 'multiple-choice', options: ['5 × 8 = 40 and 40 ÷ 5 = 8', '5 + 8 = 13 and 13 − 5 = 8', '40 × 5 = 200 and 200 ÷ 5 = 40', '8 − 5 = 3 and 3 + 5 = 8'], correctAnswer: '5 × 8 = 40 and 40 ÷ 5 = 8', standardCode: '3.OA.7' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-area-and-perimeter',
+    title: 'Area and Perimeter',
+    description: 'Measure area by counting unit squares and find the perimeter of polygons (3.MD.5, 3.MD.8)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Measurement & Data',
+    standardCodes: ['3.MD.5', '3.MD.8'],
+    content: {
+      intro: {
+        title: 'Area and Perimeter',
+        text: 'Imagine you are tiling a floor or building a fence around a garden. Tiling the floor is about area — how much surface the floor covers. Building the fence is about perimeter — the distance all the way around. Both ideas help us measure flat shapes, but they measure different things.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What Is Area?',
+          text: 'Area is the amount of space inside a flat shape. We measure area in square units. One square unit is a square that is 1 unit long and 1 unit wide. To find the area of a shape, you can cover it with square tiles and count them. If a rectangle is covered by 12 square tiles, its area is 12 square units. Area tells you how much surface the shape takes up.',
+          keyVocabulary: ['area', 'square unit', 'surface', 'flat shape'],
+          example: 'A rectangle 3 units wide and 4 units long is covered by 3 × 4 = 12 square tiles. Area = 12 square units.',
+        },
+        {
+          index: 1,
+          title: 'Counting Unit Squares',
+          text: 'You can find area by counting the unit squares inside a shape. Draw the shape on grid paper and count every square inside the outline. For a rectangle, you can also use multiplication: count the rows and the columns, then multiply. A rectangle with 5 rows of 3 squares has an area of 5 × 3 = 15 square units. For non-rectangular shapes, carefully count each square one by one.',
+          keyVocabulary: ['unit square', 'grid paper', 'rows', 'columns', 'count'],
+        },
+        {
+          index: 2,
+          title: 'What Is Perimeter?',
+          text: 'Perimeter is the distance around the outside of a shape. To find the perimeter, add up the lengths of all the sides. A rectangle with sides of 5 cm, 3 cm, 5 cm, and 3 cm has a perimeter of 5 + 3 + 5 + 3 = 16 cm. You are measuring length, not surface, so perimeter is in regular units like centimeters or inches — not square units. Think of perimeter as the length of a fence that goes all the way around.',
+          keyVocabulary: ['perimeter', 'distance around', 'sides', 'length'],
+          example: 'A triangle with sides 4 cm, 5 cm, and 6 cm: perimeter = 4 + 5 + 6 = 15 cm.',
+        },
+        {
+          index: 3,
+          title: 'Area vs. Perimeter',
+          text: 'Two shapes can have the same perimeter but different areas, or the same area but different perimeters. A 1-by-6 rectangle has an area of 6 square units and a perimeter of 14 units. A 2-by-3 rectangle also has an area of 6 square units but a perimeter of only 10 units. Same area, different perimeter! Always read the problem carefully to know whether it asks for area or perimeter.',
+          keyVocabulary: ['compare', 'same area different perimeter', 'same perimeter different area'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'A rectangle is 4 units long and 3 units wide. What is its area?', type: 'short-answer', correctAnswer: '12 square units', hint: 'Multiply length × width.', explanation: '4 × 3 = 12. The area is 12 square units.', standardCode: '3.MD.5' },
+        { index: 1, question: 'A rectangle has sides of 6 cm and 2 cm. What is its perimeter?', type: 'short-answer', correctAnswer: '16 cm', hint: 'Add all four sides: 6 + 2 + 6 + 2.', explanation: '6 + 2 + 6 + 2 = 16 cm. The perimeter is the total distance around.', standardCode: '3.MD.8' },
+        { index: 2, question: 'A shape on grid paper covers 9 unit squares. What is its area?', type: 'short-answer', correctAnswer: '9 square units', hint: 'Count the squares — each square is one square unit.', explanation: 'Each unit square counts as 1 square unit, so 9 squares = 9 square units.', standardCode: '3.MD.5' },
+        { index: 3, question: 'Which measures the space inside a shape?', type: 'multiple-choice', options: ['Perimeter', 'Area', 'Length', 'Weight'], correctAnswer: 'Area', hint: 'Inside a shape, not around it.', explanation: 'Area measures the space inside a flat shape. Perimeter measures the distance around it.', standardCode: '3.MD.5' },
+        { index: 4, question: 'A square has sides of 5 m. What is its perimeter?', type: 'short-answer', correctAnswer: '20 m', hint: 'A square has 4 equal sides. Add them.', explanation: '5 + 5 + 5 + 5 = 20 m. All four sides of a square are the same length.', standardCode: '3.MD.8' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'A rectangle is 7 units long and 2 units wide. What is its area?', type: 'short-answer', correctAnswer: '14 square units', standardCode: '3.MD.5' },
+          { question: 'A triangle has sides of 3 cm, 4 cm, and 5 cm. What is its perimeter?', type: 'short-answer', correctAnswer: '12 cm', standardCode: '3.MD.8' },
+          { question: 'Two rectangles both have an area of 8 square units. Must they have the same perimeter?', type: 'multiple-choice', options: ['Yes, always', 'No, they can have different perimeters'], correctAnswer: 'No, they can have different perimeters', standardCode: '3.MD.8' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-telling-time-to-the-minute',
+    title: 'Telling Time to the Minute',
+    description: 'Tell and write time to the nearest minute using analog and digital clocks (3.MD.1)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Measurement & Data',
+    standardCodes: ['3.MD.1'],
+    content: {
+      intro: {
+        title: 'Telling Time to the Minute',
+        text: 'You probably already know how to tell time to the hour and half hour. Now it is time to get more precise! Clocks can show every single minute of the day. Learning to read time to the nearest minute helps you know exactly when things start, how long they take, and when to be ready.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Review: Hour and Minute Hands',
+          text: 'An analog clock has two main hands. The short hand is the hour hand — it tells the hour. The long hand is the minute hand — it tells the minutes. The hour hand moves slowly from one number to the next over a full hour. The minute hand goes all the way around the clock in one hour. When the minute hand points to 12, it is exactly on the hour. When it points to 6, it is 30 minutes past the hour.',
+          keyVocabulary: ['hour hand', 'minute hand', 'analog clock'],
+          example: 'Short hand on 3, long hand on 12 = 3:00. Short hand between 3 and 4, long hand on 6 = 3:30.',
+        },
+        {
+          index: 1,
+          title: 'Counting Minutes by Fives and Ones',
+          text: 'The numbers on a clock (1 through 12) mark groups of 5 minutes. The 1 means 5 minutes, the 2 means 10 minutes, the 3 means 15 minutes, and so on up to the 12 which is 0 (or 60) minutes. To find the exact minute, count by fives to the nearest number, then count by ones for any extra tick marks. If the minute hand is two tick marks past the 4, count: 5, 10, 15, 20, plus 2 more = 22 minutes.',
+          keyVocabulary: ['count by fives', 'tick marks', 'exact minute'],
+        },
+        {
+          index: 2,
+          title: 'Writing Time',
+          text: 'We write time with the hour, a colon, and the minutes. Always write two digits for the minutes. So three hours and seven minutes is written 3:07, not 3:7. Fourteen minutes past nine is 9:14. We can also use a.m. (morning) and p.m. (afternoon and evening). School might start at 8:15 a.m. and soccer practice might end at 5:47 p.m. On a digital clock, the time is already shown in this format.',
+          keyVocabulary: ['colon', 'two digits', 'a.m.', 'p.m.', 'digital clock'],
+        },
+        {
+          index: 3,
+          title: 'Elapsed Time in Minutes',
+          text: 'Elapsed time is the amount of time that passes from start to end. If you begin reading at 2:10 and stop at 2:35, count the minutes from 10 to 35: that is 25 minutes. For longer stretches, you can count by fives or tens on the clock face. You can also subtract: 35 − 10 = 25 minutes. Understanding elapsed time helps you plan your day and know how long activities take.',
+          keyVocabulary: ['elapsed time', 'start time', 'end time', 'duration'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'The hour hand is between 7 and 8. The minute hand points to 3. What time is it?', type: 'short-answer', correctAnswer: '7:15', hint: 'The 3 on a clock means 15 minutes.', explanation: 'The hour is 7 (hour hand past 7 but not yet at 8). The minute hand on 3 = 15 minutes. Time is 7:15.', standardCode: '3.MD.1' },
+        { index: 1, question: 'How do you write eight minutes past two?', type: 'multiple-choice', options: ['2:8', '2:08', '8:02', '2:80'], correctAnswer: '2:08', hint: 'Minutes always have two digits.', explanation: 'Eight minutes is written as 08 after the colon. The correct time is 2:08.', standardCode: '3.MD.1' },
+        { index: 2, question: 'The minute hand is 1 tick mark past the 9. How many minutes past the hour is it?', type: 'short-answer', correctAnswer: '46', hint: 'The 9 means 45 minutes. Add 1 more.', explanation: '9 on the clock = 45 minutes, plus 1 tick = 46 minutes.', standardCode: '3.MD.1' },
+        { index: 3, question: 'Lunch starts at 11:45 and ends at 12:15. How many minutes is lunch?', type: 'short-answer', correctAnswer: '30', hint: 'Count from 11:45 to 12:00 (15 min), then from 12:00 to 12:15 (15 min).', explanation: '11:45 to 12:00 is 15 minutes, plus 12:00 to 12:15 is 15 minutes. Total = 30 minutes.', standardCode: '3.MD.1' },
+        { index: 4, question: 'What time is 20 minutes after 4:35?', type: 'short-answer', correctAnswer: '4:55', hint: '35 + 20 = ?', explanation: '35 minutes + 20 minutes = 55 minutes. The time is 4:55.', standardCode: '3.MD.1' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'The minute hand points to 7 and the hour hand is between 10 and 11. What time is it?', type: 'short-answer', correctAnswer: '10:35', standardCode: '3.MD.1' },
+          { question: 'How many minutes are in one hour?', type: 'short-answer', correctAnswer: '60', standardCode: '3.MD.1' },
+          { question: 'A movie starts at 3:10 and ends at 3:52. How long is the movie?', type: 'short-answer', correctAnswer: '42 minutes', standardCode: '3.MD.1' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-equivalent-fractions',
+    title: 'Equivalent Fractions',
+    description: 'Recognize and generate simple equivalent fractions and explain why they are equal (3.NF.3)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Number & Operations — Fractions',
+    standardCodes: ['3.NF.3'],
+    content: {
+      intro: {
+        title: 'Equivalent Fractions',
+        text: 'Have you ever noticed that half a pizza looks the same whether you cut the whole pizza into 2 slices or 4 slices? One out of two slices is the same amount as two out of four slices. These are called equivalent fractions — different fractions that name the same amount.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What Are Equivalent Fractions?',
+          text: 'Equivalent fractions are fractions that look different but represent the same part of a whole. The fraction 1/2 and the fraction 2/4 are equivalent because they cover the same amount of a shape or sit at the same point on a number line. Imagine a rectangle split into 2 equal parts with 1 shaded. Now split each of those 2 parts in half so there are 4 parts — now 2 are shaded. The shaded area did not change, but the fraction name changed from 1/2 to 2/4.',
+          keyVocabulary: ['equivalent fractions', 'same amount', 'same point on number line'],
+          example: '1/2 = 2/4. Shade half of a rectangle both ways to see they match.',
+        },
+        {
+          index: 1,
+          title: 'Using Pictures to Find Equivalent Fractions',
+          text: 'Draw two identical shapes. Divide the first into the parts shown by one fraction and shade the correct number. Divide the second into more or fewer parts and shade until the shaded area is the same. For example, draw two circles. Divide one into 3 parts and shade 1 to show 1/3. Divide the other into 6 parts and shade 2 to show 2/6. The shaded areas match, so 1/3 = 2/6. Pictures make equivalent fractions easy to see.',
+          keyVocabulary: ['draw', 'shade', 'match', 'identical shapes'],
+        },
+        {
+          index: 2,
+          title: 'Using Number Lines to Find Equivalent Fractions',
+          text: 'Place two number lines on top of each other, both going from 0 to 1. Divide the top line into halves and the bottom line into fourths. You can see that 1/2 on the top line matches up exactly with 2/4 on the bottom line. They are at the same spot! You can also see that 0/2 = 0/4 and 2/2 = 4/4. Number lines prove that equivalent fractions name the same point between 0 and 1.',
+          keyVocabulary: ['number line', 'line up', 'same spot'],
+        },
+        {
+          index: 3,
+          title: 'Whole Numbers as Fractions',
+          text: 'Whole numbers can be written as fractions too. The number 1 can be written as 2/2, 3/3, 4/4, 6/6, or 8/8 — any fraction where the numerator equals the denominator. The number 0 can be written as 0/2, 0/3, 0/4, and so on. Understanding this helps you see that fractions are not separate from whole numbers. Every whole number has many equivalent fraction names.',
+          keyVocabulary: ['whole number as fraction', 'numerator equals denominator'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'What fraction is equivalent to 1/2 with a denominator of 4?', type: 'short-answer', correctAnswer: '2/4', hint: 'If you cut each half into 2 parts, how many parts are shaded?', explanation: '1/2 = 2/4. Cutting each half in two gives 4 parts total and 2 shaded.', standardCode: '3.NF.3' },
+        { index: 1, question: 'Are 1/3 and 2/6 equivalent?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', hint: 'Draw two shapes and shade them to compare.', explanation: '1/3 = 2/6. If you split each third into 2 parts, you get 6 parts with 2 shaded.', standardCode: '3.NF.3' },
+        { index: 2, question: 'Which fraction is equivalent to 2/2?', type: 'multiple-choice', options: ['0', '1/2', '1', '2'], correctAnswer: '1', hint: 'When numerator equals denominator, the fraction equals ...', explanation: '2/2 = 1. Two halves make one whole.', standardCode: '3.NF.3' },
+        { index: 3, question: 'Write a fraction equivalent to 1/4 with a denominator of 8.', type: 'short-answer', correctAnswer: '2/8', hint: 'Split each fourth into 2 parts.', explanation: '1/4 = 2/8. Each fourth divided in half gives eighths, and 1 shaded fourth becomes 2 shaded eighths.', standardCode: '3.NF.3' },
+        { index: 4, question: 'On a number line, 3/3 and 1 are at the same point. True or false?', type: 'multiple-choice', options: ['True', 'False'], correctAnswer: 'True', hint: 'Three thirds make how many wholes?', explanation: 'True. 3/3 = 1. They name the same point on the number line.', standardCode: '3.NF.3' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'Which fraction is equivalent to 1/3 with a denominator of 6?', type: 'short-answer', correctAnswer: '2/6', standardCode: '3.NF.3' },
+          { question: 'Are 2/4 and 1/2 at the same point on a number line?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', standardCode: '3.NF.3' },
+          { question: 'Write 1 as a fraction with a denominator of 8.', type: 'short-answer', correctAnswer: '8/8', standardCode: '3.NF.3' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grade3-math-rounding-nearest-10-and-100',
+    title: 'Rounding to the Nearest 10 and 100',
+    description: 'Use place value understanding to round whole numbers to the nearest 10 or 100 (3.NBT.1)',
+    subject: 'math',
+    grade: 3,
+    gradeBand: 'k5',
+    topicCluster: 'Number & Operations in Base Ten',
+    standardCodes: ['3.NBT.1'],
+    content: {
+      intro: {
+        title: 'Rounding to the Nearest 10 and 100',
+        text: 'Sometimes you do not need an exact number. If your school has 283 students, you might say "about 300" or "about 280." That is rounding! Rounding replaces a number with a nearby number that is easier to work with. It is especially useful for estimating answers and checking if your work makes sense.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Rounding to the Nearest 10',
+          text: 'To round a number to the nearest 10, look at the ones digit. If the ones digit is 0, 1, 2, 3, or 4, round down to the lower ten. If the ones digit is 5, 6, 7, 8, or 9, round up to the higher ten. For example, 43 has a ones digit of 3, so it rounds down to 40. The number 67 has a ones digit of 7, so it rounds up to 70. The number 85 has a ones digit of 5 — and the rule is that 5 rounds up, so 85 rounds to 90.',
+          keyVocabulary: ['round', 'nearest ten', 'ones digit', 'round up', 'round down'],
+          example: '43 → 40 (ones digit 3, round down). 67 → 70 (ones digit 7, round up). 85 → 90 (ones digit 5, round up).',
+        },
+        {
+          index: 1,
+          title: 'Rounding to the Nearest 100',
+          text: 'To round a number to the nearest 100, look at the tens digit. If the tens digit is 0, 1, 2, 3, or 4, round down to the lower hundred. If the tens digit is 5, 6, 7, 8, or 9, round up to the higher hundred. For example, 328 has a tens digit of 2, so it rounds down to 300. The number 672 has a tens digit of 7, so it rounds up to 700. The number 150 has a tens digit of 5, so it rounds up to 200.',
+          keyVocabulary: ['nearest hundred', 'tens digit', 'place value'],
+          example: '328 → 300. 672 → 700. 450 → 500.',
+        },
+        {
+          index: 2,
+          title: 'Using a Number Line to Round',
+          text: 'A number line makes rounding visual. To round 74 to the nearest 10, find where 74 sits between 70 and 80. Since 74 is closer to 70, it rounds to 70. To round 74 to the nearest 100, find where it sits between 0 and 100. Since 74 is closer to 100, it rounds to 100. The halfway point is the deciding line. At exactly halfway (like 75 between 70 and 80), we round up.',
+          keyVocabulary: ['number line', 'closer to', 'halfway', 'between'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'Round 36 to the nearest 10.', type: 'short-answer', correctAnswer: '40', hint: 'Look at the ones digit: 6. Is it 5 or more?', explanation: 'The ones digit is 6 (5 or more), so 36 rounds up to 40.', standardCode: '3.NBT.1' },
+        { index: 1, question: 'Round 482 to the nearest 100.', type: 'short-answer', correctAnswer: '500', hint: 'Look at the tens digit: 8. Is it 5 or more?', explanation: 'The tens digit is 8 (5 or more), so 482 rounds up to 500.', standardCode: '3.NBT.1' },
+        { index: 2, question: 'What does 55 round to when rounded to the nearest 10?', type: 'multiple-choice', options: ['50', '55', '60', '100'], correctAnswer: '60', hint: 'The ones digit is 5. When it is exactly 5, we round up.', explanation: 'The ones digit is 5, so we round up. 55 rounds to 60.', standardCode: '3.NBT.1' },
+        { index: 3, question: 'Round 219 to the nearest 100.', type: 'short-answer', correctAnswer: '200', hint: 'The tens digit is 1. Round down or up?', explanation: 'The tens digit is 1 (less than 5), so 219 rounds down to 200.', standardCode: '3.NBT.1' },
+        { index: 4, question: 'A farmer has 347 apples. About how many is that, rounded to the nearest 10?', type: 'short-answer', correctAnswer: '350', hint: 'Look at the ones digit: 7.', explanation: 'The ones digit is 7 (5 or more), so 347 rounds up to 350.', standardCode: '3.NBT.1' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'Round 764 to the nearest 100.', type: 'short-answer', correctAnswer: '800', standardCode: '3.NBT.1' },
+          { question: 'Round 92 to the nearest 10.', type: 'short-answer', correctAnswer: '90', standardCode: '3.NBT.1' },
+          { question: 'Which number rounds to 500 when rounded to the nearest 100?', type: 'multiple-choice', options: ['438', '449', '462', '541'], correctAnswer: '462', standardCode: '3.NBT.1' },
+        ],
+      },
+    },
+  },
+]

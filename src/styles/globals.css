@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ── FONTS (single source of truth) ──
+ * Body:   Bricolage Grotesque (sans-serif, variable weight 200-800)
+ * Header: Headland One (serif, 400)
+ * Mono:   IBM Plex Mono (monospace, 400)
+ *
+ * Google Fonts loaded in src/app/layout.tsx <link> tag.
+ * Tailwind utilities: font-sans, font-serif, font-mono
+ */
+@theme {
+  --font-sans: "Bricolage Grotesque", sans-serif;
+  --font-serif: "Headland One", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+/* ── LIGHT THEME (default) ── */
+:root {
+  --card: #fffcf5;
+  --ring: #a67c52;
+  --input: #dbd0ba;
+  --muted: #ece5d8;
+  --accent: #d4c8aa;
+  --border: #dbd0ba;
+  --radius: 0.25rem;
+  --chart-1: #a67c52;
+  --chart-2: #8d6e4c;
+  --chart-3: #735a3a;
+  --chart-4: #b3906f;
+  --chart-5: #c0a080;
+  --popover: #fffcf5;
+  --primary: #a67c52;
+  --sidebar: #ece5d8;
+  --secondary: #e2d8c3;
+  --background: #f5f1e6;
+  --foreground: #4a3f35;
+  --destructive: #b54a35;
+  --shadow-blur: 5px;
+  --shadow-color: hsl(28 13% 20%);
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.12;
+  --sidebar-ring: #a67c52;
+  --shadow-offset-x: 2px;
+  --shadow-offset-y: 3px;
+  --sidebar-accent: #d4c8aa;
+  --sidebar-border: #dbd0ba;
+  --card-foreground: #4a3f35;
+  --sidebar-primary: #a67c52;
+  --muted-foreground: #7d6b56;
+  --accent-foreground: #4a3f35;
+  --popover-foreground: #4a3f35;
+  --primary-foreground: #ffffff;
+  --sidebar-foreground: #4a3f35;
+  --secondary-foreground: #5c4d3f;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #4a3f35;
+  --sidebar-primary-foreground: #ffffff;
+}
+
+/* ── DARK THEME ── */
+.dark {
+  --card: #3a322c;
+  --ring: #c0a080;
+  --input: #4a4039;
+  --muted: #3a322c;
+  --accent: #59493e;
+  --border: #4a4039;
+  --chart-1: #c0a080;
+  --chart-2: #b3906f;
+  --chart-3: #a67c52;
+  --chart-4: #8d6e4c;
+  --chart-5: #735a3a;
+  --popover: #3a322c;
+  --primary: #c0a080;
+  --sidebar: #2d2621;
+  --secondary: #4a4039;
+  --background: #2d2621;
+  --foreground: #ece5d8;
+  --destructive: #b54a35;
+  --sidebar-ring: #c0a080;
+  --sidebar-accent: #59493e;
+  --sidebar-border: #4a4039;
+  --card-foreground: #ece5d8;
+  --sidebar-primary: #c0a080;
+  --muted-foreground: #c5bcac;
+  --accent-foreground: #ece5d8;
+  --popover-foreground: #ece5d8;
+  --primary-foreground: #2d2621;
+  --sidebar-foreground: #ece5d8;
+  --secondary-foreground: #ece5d8;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #ece5d8;
+  --sidebar-primary-foreground: #2d2621;
+}
+
+/* ── BASE STYLES ── */
+a {
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── CLAYMORPHISM FORBIDDEN RULES ──
+ * NO backdrop-filter: blur(...) — no glassmorphism
+ * NO inset shadows — no inner shadows
+ * NO corners < 16px on interactive elements
+ * NO desaturated / grayscale color schemes
+ */

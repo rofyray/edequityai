@@ -1,0 +1,36 @@
+export const mockModule = {
+  id: 'grade5-math-fractions-add',
+  slug: 'grade5-math-fractions-add',
+  title: 'Adding Fractions',
+  description: 'Learn to add fractions with like and unlike denominators',
+  subject: 'math' as const,
+  grade: 5,
+  gradeBand: 'k5' as const,
+  region: 'all',
+  standardCodes: ['NC-Math-5.NF.1', 'NC-Math-5.NF.2'],
+  topicCluster: 'Number & Operations—Fractions',
+  segmentCount: 5,
+  estimatedMinutes: 18,
+  xpReward: 50,
+  isPlaceholder: false,
+}
+
+export const mockModules = [
+  mockModule,
+  {
+    id: 'grade5-ela-theme',
+    slug: 'grade5-ela-theme',
+    title: 'Theme from Details',
+    description: 'Determine theme from key details in a text',
+    subject: 'ela' as const,
+    grade: 5,
+    gradeBand: 'k5' as const,
+    region: 'all',
+    standardCodes: ['NC-ELA-5.RL.2'],
+    topicCluster: 'Reading Literature',
+    segmentCount: 4,
+    estimatedMinutes: 15,
+    xpReward: 40,
+    isPlaceholder: false,
+  },
+]

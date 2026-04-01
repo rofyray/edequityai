@@ -1,0 +1,676 @@
+import type { ModuleSeed } from '../types'
+
+export const GRADE_K_MATH: ModuleSeed[] = [
+  {
+    slug: 'gradeK-math-counting-to-100',
+    title: 'Counting to 100',
+    description: 'Count forward from any given number within 100 by ones and tens',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Counting & Cardinality',
+    standardCodes: ['K.CC.1', 'K.CC.2'],
+    content: {
+      intro: {
+        title: 'Counting to 100',
+        text: 'Numbers are all around us! Today we will learn to count from 1 all the way to 100. Counting helps us know how many things we have. We can count by ones, like 1, 2, 3, or by tens, like 10, 20, 30.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Counting 1 to 20',
+          text: 'Let us start by counting from 1 to 20. Each number is one more than the number before it. When we say 1, 2, 3, 4, 5, we are counting up by ones. After 10, the numbers follow a pattern: eleven, twelve, thirteen, fourteen, and so on up to twenty. Practice saying each number out loud as you point to objects around you. You can count your fingers, your crayons, or blocks on your desk.',
+          keyVocabulary: ['count', 'number', 'ones', 'pattern'],
+          example: 'Count the apples: 🍎🍎🍎🍎🍎 — that is 5 apples!',
+        },
+        {
+          index: 1,
+          title: 'Counting 21 to 50',
+          text: 'Now let us keep going past 20. After 20 comes 21, 22, 23, and so on. Notice the pattern: twenty-one, twenty-two, twenty-three. Each group of ten has the same ending pattern. After 29 comes 30, after 39 comes 40, and after 49 comes 50. When you see these patterns, counting becomes easier and faster.',
+          keyVocabulary: ['twenty', 'thirty', 'forty', 'fifty', 'pattern'],
+        },
+        {
+          index: 2,
+          title: 'Counting 51 to 100',
+          text: 'We are more than halfway there! From 51 to 100, the same pattern continues. Fifty-one, fifty-two, all the way to sixty. Then seventy, eighty, ninety, and finally one hundred! One hundred is a very big number. It takes ten groups of ten to make 100. Try counting from 1 to 100 by yourself — you can do it!',
+          keyVocabulary: ['sixty', 'seventy', 'eighty', 'ninety', 'hundred'],
+        },
+        {
+          index: 3,
+          title: 'Counting by Tens',
+          text: 'Sometimes we can count faster by skipping numbers. When we count by tens, we say 10, 20, 30, 40, 50, 60, 70, 80, 90, 100. That is only ten numbers to say instead of one hundred! Counting by tens is useful when you have groups of ten objects. If you have 3 bags with 10 marbles each, you can count 10, 20, 30 — that is 30 marbles total.',
+          keyVocabulary: ['skip count', 'tens', 'groups', 'total'],
+          example: '10, 20, 30, 40, 50, 60, 70, 80, 90, 100 — we counted to 100 in just ten steps!',
+        },
+      ],
+      practice: [
+        { index: 0, question: 'What number comes after 15?', type: 'short-answer', correctAnswer: '16', hint: 'Count: 13, 14, 15, ...', explanation: 'After 15 comes 16. Each number is one more than the one before it.', standardCode: 'K.CC.2' },
+        { index: 1, question: 'What number comes after 29?', type: 'short-answer', correctAnswer: '30', hint: 'After 29, we start a new group of ten.', explanation: '29 is the last number in the twenties. The next number is 30.', standardCode: 'K.CC.1' },
+        { index: 2, question: 'Count by tens: 10, 20, 30, ___, 50', type: 'fill-blank', correctAnswer: '40', hint: 'Each number is 10 more than the last.', explanation: 'When counting by tens, after 30 comes 40.', standardCode: 'K.CC.1' },
+        { index: 3, question: 'What number comes just before 100?', type: 'short-answer', correctAnswer: '99', hint: '100 minus 1 equals ...', explanation: '99 is the number right before 100.', standardCode: 'K.CC.2' },
+        { index: 4, question: 'Which of these is a way to count by tens?', type: 'multiple-choice', options: ['1, 2, 3, 4', '10, 20, 30, 40', '5, 10, 15, 20', '2, 4, 6, 8'], correctAnswer: '10, 20, 30, 40', hint: 'Counting by tens means adding 10 each time.', explanation: '10, 20, 30, 40 shows counting by tens because each number is 10 more.', standardCode: 'K.CC.1' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'What number comes after 47?', type: 'short-answer', correctAnswer: '48', standardCode: 'K.CC.2' },
+          { question: 'Count by tens. What comes after 70?', type: 'short-answer', correctAnswer: '80', standardCode: 'K.CC.1' },
+          { question: 'What is the number that is 1 more than 99?', type: 'short-answer', correctAnswer: '100', standardCode: 'K.CC.2' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-number-names',
+    title: 'Number Names to 20',
+    description: 'Write and recognize number names for 0 through 20',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Counting & Cardinality',
+    standardCodes: ['K.CC.3'],
+    content: {
+      intro: {
+        title: 'Number Names to 20',
+        text: 'Numbers can be written as digits like 5, or as words like five. Today we will learn the names of numbers from 0 to 20. Knowing number names helps us read and write about numbers in stories and everyday life.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Numbers 0 to 5',
+          text: 'Let us start with the first few numbers. Zero means nothing or none. One is a single thing. Two means a pair. Three, four, and five come next. Each of these number words is special and does not follow a pattern — you need to memorize them. Practice writing: zero, one, two, three, four, five.',
+          keyVocabulary: ['zero', 'one', 'two', 'three', 'four', 'five', 'digit'],
+        },
+        {
+          index: 1,
+          title: 'Numbers 6 to 10',
+          text: 'Next come six, seven, eight, nine, and ten. Ten is special because it is the first number with two digits. When you write the word ten, you are describing one group of ten things. All of these words must be memorized because they do not follow a simple pattern. Practice matching the digit to the word: 6 is six, 7 is seven, 8 is eight, 9 is nine, 10 is ten.',
+          keyVocabulary: ['six', 'seven', 'eight', 'nine', 'ten'],
+        },
+        {
+          index: 2,
+          title: 'Numbers 11 to 15',
+          text: 'The teen numbers can be tricky! Eleven and twelve have their own special names. Starting at thirteen, you can hear the smaller number inside: thir-teen has three in it, four-teen has four, and fif-teen has five. The word teen means plus ten. So thirteen means three plus ten, which equals 13.',
+          keyVocabulary: ['eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'teen'],
+        },
+        {
+          index: 3,
+          title: 'Numbers 16 to 20',
+          text: 'The pattern continues with sixteen, seventeen, eighteen, nineteen, and twenty. Six-teen means six plus ten, which is 16. Seven-teen is seven plus ten, which is 17. Twenty is a brand new group — it means two tens! When you can read and write all the number names from 0 to 20, you are ready for bigger numbers.',
+          keyVocabulary: ['sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'Write the number name for 7.', type: 'short-answer', correctAnswer: 'seven', hint: 'It starts with the letter s.', explanation: 'The number 7 is written as the word seven.', standardCode: 'K.CC.3' },
+        { index: 1, question: 'What number does the word "thirteen" represent?', type: 'short-answer', correctAnswer: '13', hint: 'Thir-teen means three plus ten.', explanation: 'Thirteen is the name for the number 13.', standardCode: 'K.CC.3' },
+        { index: 2, question: 'Which word matches the number 20?', type: 'multiple-choice', options: ['twelve', 'twenty', 'ten', 'two'], correctAnswer: 'twenty', hint: 'It means two groups of ten.', explanation: 'Twenty is the word for 20. It means two tens.', standardCode: 'K.CC.3' },
+        { index: 3, question: 'Write the number name for 0.', type: 'short-answer', correctAnswer: 'zero', hint: 'It means none or nothing.', explanation: 'Zero is the name for the number 0.', standardCode: 'K.CC.3' },
+        { index: 4, question: 'What number does "fifteen" stand for?', type: 'short-answer', correctAnswer: '15', hint: 'Fif-teen means five plus ten.', explanation: 'Fifteen means 5 + 10 = 15.', standardCode: 'K.CC.3' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'Write the number name for 11.', type: 'short-answer', correctAnswer: 'eleven', standardCode: 'K.CC.3' },
+          { question: 'What number does "eighteen" represent?', type: 'short-answer', correctAnswer: '18', standardCode: 'K.CC.3' },
+          { question: 'Which word names the number 9?', type: 'multiple-choice', options: ['six', 'nine', 'nineteen', 'none'], correctAnswer: 'nine', standardCode: 'K.CC.3' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-comparing-numbers',
+    title: 'Comparing Numbers to 10',
+    description: 'Compare two numbers between 1 and 10 using greater than, less than, and equal to',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Counting & Cardinality',
+    standardCodes: ['K.CC.6', 'K.CC.7'],
+    content: {
+      intro: {
+        title: 'Comparing Numbers to 10',
+        text: 'Sometimes we need to know which group has more or which has less. Comparing numbers helps us figure that out! We will learn the words greater than, less than, and equal to.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'More and Fewer',
+          text: 'When one group has more things, we say its number is greater. When a group has fewer things, its number is less. If you have 7 stickers and your friend has 4, you have more stickers because 7 is greater than 4. Your friend has fewer stickers because 4 is less than 7.',
+          keyVocabulary: ['greater', 'less', 'more', 'fewer', 'compare'],
+          example: '🍎🍎🍎🍎🍎 vs 🍎🍎🍎 — 5 is greater than 3 because 5 has more.',
+        },
+        {
+          index: 1,
+          title: 'Equal To',
+          text: 'When two groups have the same number of things, we say they are equal. Equal means the same amount. If you have 3 blocks and your friend has 3 blocks, you have equal amounts. We write this as 3 = 3. The equals sign means the same as.',
+          keyVocabulary: ['equal', 'same', 'equals sign'],
+        },
+        {
+          index: 2,
+          title: 'Using a Number Line',
+          text: 'A number line helps us compare. Numbers to the right are greater and numbers to the left are less. On a number line from 0 to 10, the number 8 is to the right of 5, so 8 is greater than 5. The number 2 is to the left of 6, so 2 is less than 6. The number line is a great tool for comparing!',
+          keyVocabulary: ['number line', 'right', 'left', 'greater', 'less'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'Which is greater: 6 or 3?', type: 'short-answer', correctAnswer: '6', hint: 'Which number is farther right on the number line?', explanation: '6 is greater than 3 because 6 comes after 3 when counting.', standardCode: 'K.CC.7' },
+        { index: 1, question: 'Are 5 and 5 equal?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', hint: 'Are they the same number?', explanation: '5 and 5 are the same number, so they are equal.', standardCode: 'K.CC.6' },
+        { index: 2, question: 'Which is less: 2 or 9?', type: 'short-answer', correctAnswer: '2', hint: 'Which number is smaller?', explanation: '2 is less than 9 because 2 comes before 9 when counting.', standardCode: 'K.CC.7' },
+        { index: 3, question: 'Compare: 8 ___ 4 (greater than, less than, or equal to?)', type: 'short-answer', correctAnswer: 'greater than', hint: '8 is a bigger number than 4.', explanation: '8 is greater than 4 because 8 is more than 4.', standardCode: 'K.CC.7' },
+        { index: 4, question: 'Which number is less: 10 or 7?', type: 'short-answer', correctAnswer: '7', hint: 'Find both on the number line.', explanation: '7 is less than 10 because 7 comes before 10.', standardCode: 'K.CC.7' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'Which is greater: 4 or 9?', type: 'short-answer', correctAnswer: '9', standardCode: 'K.CC.7' },
+          { question: 'Is 6 equal to 6?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', standardCode: 'K.CC.6' },
+          { question: 'Which is less: 8 or 1?', type: 'short-answer', correctAnswer: '1', standardCode: 'K.CC.7' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-counting-objects',
+    title: 'Counting Objects to 20',
+    description: 'Count objects to tell how many, answering "how many?" questions for groups up to 20',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Counting & Cardinality',
+    standardCodes: ['K.CC.4', 'K.CC.5'],
+    content: {
+      intro: {
+        title: 'Counting Objects to 20',
+        text: 'When someone asks "how many?", we count to find out. Counting objects means touching or pointing to each one and saying a number. The last number you say tells how many there are in all.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'One-to-One Counting',
+          text: 'When counting objects, point to each object one at a time and say one number for each. This is called one-to-one correspondence. Do not skip any objects and do not count the same object twice. Start from one side and move across. Touch each object as you count: one, two, three, four, five. The last number you say is the total.',
+          keyVocabulary: ['one-to-one', 'correspondence', 'point', 'total'],
+          example: 'Point to each star as you count: ⭐⭐⭐ — 1, 2, 3. There are 3 stars!',
+        },
+        {
+          index: 1,
+          title: 'Counting Groups to 10',
+          text: 'Let us practice counting groups of objects up to 10. Arrange objects in a line to make counting easier. If objects are scattered, move them into a line first. Count slowly and carefully. If you get mixed up, start over from 1. With practice, you will get faster at counting up to 10 objects.',
+          keyVocabulary: ['group', 'arrange', 'line', 'scattered'],
+        },
+        {
+          index: 2,
+          title: 'Counting Groups to 20',
+          text: 'Now let us try bigger groups, up to 20 objects. It helps to make groups of 5 or 10 first. If you have a big pile of counters, count out 10, set them aside, then count what is left. You can say I have 10 and 4 more, so there are 14 in all. This grouping strategy makes counting large numbers easier and more accurate.',
+          keyVocabulary: ['group of ten', 'strategy', 'accurate'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'How many circles? ⚪⚪⚪⚪⚪⚪', type: 'short-answer', correctAnswer: '6', hint: 'Point to each circle and count.', explanation: 'There are 6 circles. Count each one: 1, 2, 3, 4, 5, 6.', standardCode: 'K.CC.5' },
+        { index: 1, question: 'You counted 8 blocks. Your friend adds 1 more. How many now?', type: 'short-answer', correctAnswer: '9', hint: 'What comes after 8?', explanation: '8 and 1 more is 9.', standardCode: 'K.CC.4' },
+        { index: 2, question: 'How many triangles? 🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺', type: 'short-answer', correctAnswer: '12', hint: 'Count carefully, one at a time.', explanation: 'There are 12 triangles. Touch each one as you count to 12.', standardCode: 'K.CC.5' },
+        { index: 3, question: 'When you count objects, the last number you say tells you...', type: 'multiple-choice', options: ['the first object', 'how many in all', 'the biggest number', 'nothing'], correctAnswer: 'how many in all', hint: 'The last number is special.', explanation: 'The last number you say when counting tells the total — how many objects there are in all.', standardCode: 'K.CC.4' },
+        { index: 4, question: 'You have 10 crayons and 5 more. How many in all?', type: 'short-answer', correctAnswer: '15', hint: 'Count on from 10: 11, 12, 13...', explanation: '10 and 5 more is 15. You can count on from 10.', standardCode: 'K.CC.5' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'How many hearts? ❤️❤️❤️❤️❤️❤️❤️', type: 'short-answer', correctAnswer: '7', standardCode: 'K.CC.5' },
+          { question: 'You have 10 apples and 8 more. How many in all?', type: 'short-answer', correctAnswer: '18', standardCode: 'K.CC.5' },
+          { question: 'What does the last number you say when counting tell you?', type: 'multiple-choice', options: ['How many in all', 'The first number', 'The middle number'], correctAnswer: 'How many in all', standardCode: 'K.CC.4' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-addition-within-10',
+    title: 'Addition Within 10',
+    description: 'Represent addition and solve add-to and put-together problems within 10',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['K.OA.1', 'K.OA.2'],
+    content: {
+      intro: {
+        title: 'Addition Within 10',
+        text: 'Addition means putting things together to find out how many in all. When you have 3 apples and someone gives you 2 more, you add them together: 3 plus 2 equals 5. The plus sign (+) means to add.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What is Addition?',
+          text: 'Addition is joining two groups together. We use the plus sign + to show addition and the equals sign = to show the answer. For example, 2 + 3 = 5 means two things and three more things make five things in all. You can use your fingers, draw pictures, or use objects to help you add.',
+          keyVocabulary: ['addition', 'plus', 'equals', 'join', 'in all'],
+          example: '🐱🐱 + 🐱🐱🐱 = 🐱🐱🐱🐱🐱 → 2 + 3 = 5',
+        },
+        {
+          index: 1,
+          title: 'Adding with Objects',
+          text: 'To add with objects, put the first group on one side and the second group on the other side. Then push them together and count all the objects. If you have 4 blocks and 3 blocks, push them together and count: 1, 2, 3, 4, 5, 6, 7. So 4 + 3 = 7. You can also count on — start at 4 and count three more: 5, 6, 7.',
+          keyVocabulary: ['objects', 'count on', 'push together'],
+        },
+        {
+          index: 2,
+          title: 'Addition Facts to 5',
+          text: 'Let us learn the small addition facts. 0 + 1 = 1. 1 + 1 = 2. 2 + 1 = 3. When you add zero to any number, the answer is that same number. When you add 1, the answer is the next counting number. Practice these small facts until you know them by heart: 1 + 2 = 3, 2 + 2 = 4, 1 + 4 = 5, 2 + 3 = 5.',
+          keyVocabulary: ['addition fact', 'zero', 'next number'],
+        },
+        {
+          index: 3,
+          title: 'Addition Facts to 10',
+          text: 'Now let us add with bigger numbers, up to 10. 5 + 5 = 10 is an important fact. 4 + 6 = 10 and 3 + 7 = 10 are also ways to make 10. Knowing the pairs that make 10 will help you a lot in math. Practice: 6 + 2 = 8, 5 + 4 = 9, 7 + 3 = 10. Use your fingers if you need help!',
+          keyVocabulary: ['pairs', 'make ten', 'facts to 10'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '3 + 2 = ?', type: 'short-answer', correctAnswer: '5', hint: 'Start at 3 and count 2 more.', explanation: '3 + 2 = 5. Start at 3 and count: 4, 5.', standardCode: 'K.OA.2' },
+        { index: 1, question: '5 + 0 = ?', type: 'short-answer', correctAnswer: '5', hint: 'Adding zero means nothing changes.', explanation: '5 + 0 = 5. Any number plus zero is that same number.', standardCode: 'K.OA.2' },
+        { index: 2, question: '4 + 4 = ?', type: 'short-answer', correctAnswer: '8', hint: 'Use your fingers — hold up 4 on each hand.', explanation: '4 + 4 = 8. Four fingers plus four fingers equals eight fingers.', standardCode: 'K.OA.2' },
+        { index: 3, question: 'You have 6 stickers. You get 3 more. How many in all?', type: 'short-answer', correctAnswer: '9', hint: 'Count on from 6: 7, 8, ...', explanation: '6 + 3 = 9. Starting from 6, count three more: 7, 8, 9.', standardCode: 'K.OA.1' },
+        { index: 4, question: 'Which number sentence equals 10?', type: 'multiple-choice', options: ['4 + 5', '3 + 7', '6 + 6', '2 + 5'], correctAnswer: '3 + 7', hint: 'Check each one by adding.', explanation: '3 + 7 = 10. This is one of the pairs that makes 10.', standardCode: 'K.OA.2' },
+      ],
+      assessment: {
+        questions: [
+          { question: '7 + 2 = ?', type: 'short-answer', correctAnswer: '9', standardCode: 'K.OA.2' },
+          { question: '5 + 5 = ?', type: 'short-answer', correctAnswer: '10', standardCode: 'K.OA.2' },
+          { question: 'You have 4 books. A friend gives you 3 more. How many books do you have?', type: 'short-answer', correctAnswer: '7', standardCode: 'K.OA.1' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-subtraction-within-10',
+    title: 'Subtraction Within 10',
+    description: 'Represent subtraction and solve take-from problems within 10',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['K.OA.1', 'K.OA.2'],
+    content: {
+      intro: {
+        title: 'Subtraction Within 10',
+        text: 'Subtraction means taking away from a group. When you have 5 cookies and eat 2, you subtract: 5 minus 2 equals 3. The minus sign (−) means to take away.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What is Subtraction?',
+          text: 'Subtraction is taking part of a group away. We use the minus sign − to show subtraction. For example, 5 − 2 = 3 means you start with five things, take away two, and have three left. Subtraction answers the question: how many are left?',
+          keyVocabulary: ['subtraction', 'minus', 'take away', 'left'],
+          example: '🍪🍪🍪🍪🍪 take away 🍪🍪 = 🍪🍪🍪 → 5 − 2 = 3',
+        },
+        {
+          index: 1,
+          title: 'Subtracting with Objects',
+          text: 'To subtract with objects, start with a group, then take some away. Count what is left. If you have 7 blocks and remove 3, count the remaining blocks: 1, 2, 3, 4. So 7 − 3 = 4. You can also count back from 7: say 6, 5, 4. That is three counts back, and you land on 4.',
+          keyVocabulary: ['remove', 'remaining', 'count back'],
+        },
+        {
+          index: 2,
+          title: 'Subtraction Facts to 5',
+          text: 'Practice the small subtraction facts. 1 − 1 = 0. 2 − 1 = 1. 3 − 2 = 1. 4 − 3 = 1. 5 − 5 = 0. When you subtract a number from itself, the answer is always 0. When you subtract 1, the answer is the number right before it in counting.',
+          keyVocabulary: ['fact', 'subtract from itself', 'before'],
+        },
+        {
+          index: 3,
+          title: 'Subtraction Facts to 10',
+          text: 'Now try bigger subtraction facts. 10 − 5 = 5. 8 − 3 = 5. 9 − 4 = 5. Notice that subtraction and addition are related: if 3 + 7 = 10, then 10 − 3 = 7 and 10 − 7 = 3. Knowing your addition facts helps with subtraction!',
+          keyVocabulary: ['related facts', 'fact family', 'inverse'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '5 − 3 = ?', type: 'short-answer', correctAnswer: '2', hint: 'Start with 5 fingers and put 3 down.', explanation: '5 − 3 = 2. Take 3 away from 5 and 2 are left.', standardCode: 'K.OA.2' },
+        { index: 1, question: '8 − 0 = ?', type: 'short-answer', correctAnswer: '8', hint: 'Subtracting zero means nothing is taken away.', explanation: '8 − 0 = 8. If you take nothing away, you still have 8.', standardCode: 'K.OA.2' },
+        { index: 2, question: '10 − 4 = ?', type: 'short-answer', correctAnswer: '6', hint: 'Count back 4 from 10: 9, 8, 7, ...', explanation: '10 − 4 = 6. Counting back from 10: 9, 8, 7, 6.', standardCode: 'K.OA.2' },
+        { index: 3, question: 'You have 9 grapes. You eat 5. How many are left?', type: 'short-answer', correctAnswer: '4', hint: '9 take away 5 is ...', explanation: '9 − 5 = 4. You started with 9 and ate 5, so 4 are left.', standardCode: 'K.OA.1' },
+        { index: 4, question: '6 − 6 = ?', type: 'short-answer', correctAnswer: '0', hint: 'What happens when you take all of them away?', explanation: '6 − 6 = 0. When you subtract a number from itself, nothing is left.', standardCode: 'K.OA.2' },
+      ],
+      assessment: {
+        questions: [
+          { question: '7 − 4 = ?', type: 'short-answer', correctAnswer: '3', standardCode: 'K.OA.2' },
+          { question: '10 − 7 = ?', type: 'short-answer', correctAnswer: '3', standardCode: 'K.OA.2' },
+          { question: 'You have 8 toy cars. You give away 2. How many are left?', type: 'short-answer', correctAnswer: '6', standardCode: 'K.OA.1' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-decomposing-numbers',
+    title: 'Decomposing Numbers Within 10',
+    description: 'Decompose numbers within 10 into pairs in more than one way',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['K.OA.3'],
+    content: {
+      intro: {
+        title: 'Decomposing Numbers Within 10',
+        text: 'Decomposing means breaking a number into two smaller parts. Did you know that one number can be broken apart in many different ways? For example, 5 can be split into 2 and 3, or into 4 and 1. Learning to decompose numbers helps you become a flexible thinker in math!',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Breaking Numbers Apart',
+          text: 'Every number can be broken into two parts. Think of 4 objects. You can split them into 1 and 3, or 2 and 2, or 3 and 1, or even 4 and 0. All of these pairs add back up to 4. When we break a number into parts, we are decomposing it. When we put the parts back together, we are composing. Decomposing is like taking apart a puzzle, and composing is like putting it back together.',
+          keyVocabulary: ['decompose', 'compose', 'parts', 'pairs', 'break apart'],
+          example: '4 = 1 + 3 = 2 + 2 = 3 + 1 = 4 + 0 — four different ways to break 4 apart!',
+        },
+        {
+          index: 1,
+          title: 'Decomposing 5',
+          text: 'Let us practice with the number 5. Imagine you have 5 counters. Put some on the left and the rest on the right. You could put 0 on the left and 5 on the right: 0 + 5 = 5. Or 1 on the left and 4 on the right: 1 + 4 = 5. Or 2 and 3, 3 and 2, 4 and 1, or 5 and 0. That gives us six different ways to decompose 5! Drawing pictures or using objects makes this easier to see.',
+          keyVocabulary: ['counters', 'left', 'right', 'ways'],
+        },
+        {
+          index: 2,
+          title: 'Decomposing Numbers 6 to 10',
+          text: 'Bigger numbers have even more ways to be decomposed. The number 7 can be split as 0 + 7, 1 + 6, 2 + 5, 3 + 4, 4 + 3, 5 + 2, 6 + 1, and 7 + 0. The number 10 is very important: 1 + 9, 2 + 8, 3 + 7, 4 + 6, 5 + 5. Knowing the pairs that make 10 will help you in addition and subtraction for years to come.',
+          keyVocabulary: ['pairs that make 10', 'split', 'number bonds'],
+        },
+        {
+          index: 3,
+          title: 'Number Bonds',
+          text: 'A number bond is a picture that shows how a number breaks into two parts. It has a circle on top for the whole number and two circles on the bottom for the parts. Lines connect them. For example, a number bond for 6 could show 6 on top with 2 and 4 on the bottom. You can draw many different number bonds for the same number because there are many ways to decompose it.',
+          keyVocabulary: ['number bond', 'whole', 'parts', 'diagram'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'Fill in the blank: 5 = 3 + ___', type: 'fill-blank', correctAnswer: '2', hint: 'What plus 3 equals 5?', explanation: '5 = 3 + 2. The two parts 3 and 2 make 5 when put together.', standardCode: 'K.OA.3' },
+        { index: 1, question: 'Name two parts that make 6.', type: 'short-answer', correctAnswer: '4 and 2', hint: 'Think of 6 objects split into two groups.', explanation: '6 can be decomposed as 4 + 2 (also 1 + 5, 3 + 3, and other pairs).', standardCode: 'K.OA.3' },
+        { index: 2, question: '8 = 5 + ___', type: 'fill-blank', correctAnswer: '3', hint: 'Start at 5 and count up to 8.', explanation: '8 = 5 + 3. Five and three are parts that make eight.', standardCode: 'K.OA.3' },
+        { index: 3, question: 'Which is NOT a way to decompose 7?', type: 'multiple-choice', options: ['3 + 4', '2 + 5', '6 + 2', '1 + 6'], correctAnswer: '6 + 2', hint: 'Add each pair. Does it equal 7?', explanation: '6 + 2 = 8, not 7. All the other pairs add up to 7.', standardCode: 'K.OA.3' },
+        { index: 4, question: '10 = 6 + ___', type: 'fill-blank', correctAnswer: '4', hint: 'What do you add to 6 to get 10?', explanation: '10 = 6 + 4. Six and four are a pair that makes 10.', standardCode: 'K.OA.3' },
+      ],
+      assessment: {
+        questions: [
+          { question: '9 = 7 + ___', type: 'fill-blank', correctAnswer: '2', standardCode: 'K.OA.3' },
+          { question: 'Which pair makes 5?', type: 'multiple-choice', options: ['2 + 2', '3 + 2', '4 + 3', '1 + 5'], correctAnswer: '3 + 2', standardCode: 'K.OA.3' },
+          { question: 'Write two parts that make 8.', type: 'short-answer', correctAnswer: '5 and 3', standardCode: 'K.OA.3' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-fluency-within-5',
+    title: 'Fluently Add and Subtract Within 5',
+    description: 'Fluently add and subtract within 5 using mental strategies',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Operations & Algebraic Thinking',
+    standardCodes: ['K.OA.5'],
+    content: {
+      intro: {
+        title: 'Fluently Add and Subtract Within 5',
+        text: 'Being fluent means knowing your facts quickly and accurately, without having to count every time. Today we will practice addition and subtraction facts up to 5 until they feel automatic. When you know these facts by heart, bigger math problems become much easier!',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Addition Facts to 5',
+          text: 'There are not that many addition facts with answers up to 5, so you can learn them all! Here they are: 0 + 1 = 1, 0 + 2 = 2, 0 + 3 = 3, 0 + 4 = 4, 0 + 5 = 5, 1 + 1 = 2, 1 + 2 = 3, 1 + 3 = 4, 1 + 4 = 5, 2 + 2 = 4, 2 + 3 = 5. Practice saying them out loud. Try to answer each one in just a second or two.',
+          keyVocabulary: ['fluent', 'fact', 'automatic', 'quickly'],
+          example: 'Flash fact: 2 + 3 = ? Think fast! The answer is 5.',
+        },
+        {
+          index: 1,
+          title: 'Subtraction Facts to 5',
+          text: 'Now let us practice subtraction facts. 1 − 1 = 0, 2 − 1 = 1, 2 − 2 = 0, 3 − 1 = 2, 3 − 2 = 1, 3 − 3 = 0, 4 − 1 = 3, 4 − 2 = 2, 4 − 3 = 1, 5 − 1 = 4, 5 − 2 = 3, 5 − 3 = 2, 5 − 4 = 1, 5 − 5 = 0. Every subtraction fact has a matching addition fact. If 2 + 3 = 5, then 5 − 3 = 2 and 5 − 2 = 3.',
+          keyVocabulary: ['subtraction fact', 'matching', 'related'],
+        },
+        {
+          index: 2,
+          title: 'Strategies for Speed',
+          text: 'Here are some tricks to help you be faster. Adding 0 means the number stays the same. Adding 1 means the next number. Subtracting 0 means nothing changes. Subtracting a number from itself always gives 0. Doubles are easy to remember: 1 + 1 = 2, 2 + 2 = 4. Use these patterns and you will know your facts in no time!',
+          keyVocabulary: ['strategy', 'doubles', 'pattern', 'zero property'],
+        },
+        {
+          index: 3,
+          title: 'Practice Makes Fluent',
+          text: 'Fluency comes from practice. Try these quick challenges: say each answer as fast as you can. 3 + 2? 4 − 1? 1 + 4? 5 − 3? 2 + 2? 5 − 4? If you can answer all of them without counting on your fingers, you are becoming fluent! Keep practicing every day and these facts will become second nature to you.',
+          keyVocabulary: ['practice', 'fluency', 'challenge', 'second nature'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '2 + 2 = ?', type: 'short-answer', correctAnswer: '4', hint: 'This is a doubles fact.', explanation: '2 + 2 = 4. Doubles are quick to remember!', standardCode: 'K.OA.5' },
+        { index: 1, question: '5 − 3 = ?', type: 'short-answer', correctAnswer: '2', hint: 'Start at 5 and take away 3.', explanation: '5 − 3 = 2. Five take away three leaves two.', standardCode: 'K.OA.5' },
+        { index: 2, question: '1 + 4 = ?', type: 'short-answer', correctAnswer: '5', hint: 'One more than 4 is ...', explanation: '1 + 4 = 5. One plus four equals five.', standardCode: 'K.OA.5' },
+        { index: 3, question: '4 − 2 = ?', type: 'short-answer', correctAnswer: '2', hint: 'Think of the related addition: 2 + ? = 4.', explanation: '4 − 2 = 2. Since 2 + 2 = 4, we know 4 − 2 = 2.', standardCode: 'K.OA.5' },
+        { index: 4, question: '3 + 1 = ?', type: 'short-answer', correctAnswer: '4', hint: 'Adding 1 gives the next number.', explanation: '3 + 1 = 4. The number after 3 is 4.', standardCode: 'K.OA.5' },
+      ],
+      assessment: {
+        questions: [
+          { question: '5 − 2 = ?', type: 'short-answer', correctAnswer: '3', standardCode: 'K.OA.5' },
+          { question: '2 + 3 = ?', type: 'short-answer', correctAnswer: '5', standardCode: 'K.OA.5' },
+          { question: '4 − 4 = ?', type: 'short-answer', correctAnswer: '0', standardCode: 'K.OA.5' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-place-value-11-to-19',
+    title: 'Place Value: Numbers 11 to 19',
+    description: 'Compose and decompose numbers from 11 to 19 into ten ones and some further ones',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Number & Operations in Base Ten',
+    standardCodes: ['K.NBT.1'],
+    content: {
+      intro: {
+        title: 'Place Value: Numbers 11 to 19',
+        text: 'The teen numbers are special because they are all made of one group of ten and some extra ones. The number 13 is really 10 + 3. Understanding this idea is the beginning of place value, one of the biggest ideas in all of math!',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'What is a Ten?',
+          text: 'When we have 10 single objects, we can bundle them into one group of ten. Think of 10 loose crayons put together with a rubber band — now they are one bundle of ten. A ten frame is a box with 10 spaces arranged in two rows of five. When all 10 spaces are filled, you have one complete ten. Grouping into tens makes counting and working with bigger numbers much easier.',
+          keyVocabulary: ['ten', 'bundle', 'group', 'ten frame'],
+          example: 'Fill a ten frame: ⬛⬛⬛⬛⬛ / ⬛⬛⬛⬛⬛ — that is one full ten!',
+        },
+        {
+          index: 1,
+          title: 'Teen Numbers as Ten and Ones',
+          text: 'Every teen number from 11 to 19 is made of one ten and some extra ones. 11 = 10 + 1 (one ten and one more). 12 = 10 + 2 (one ten and two more). 13 = 10 + 3, 14 = 10 + 4, 15 = 10 + 5. You can show this with a full ten frame plus extra counters beside it. If your ten frame is full and you have 3 extra counters, you have 13.',
+          keyVocabulary: ['teen number', 'ones', 'ten and ones', 'extra'],
+        },
+        {
+          index: 2,
+          title: 'Numbers 16 to 19',
+          text: 'The pattern continues for the larger teen numbers. 16 = 10 + 6, 17 = 10 + 7, 18 = 10 + 8, 19 = 10 + 9. Notice that 19 is the biggest teen number — it has one ten and nine ones. After 19 comes 20, which is two tens! You can use two ten frames side by side to show this: one full frame for the ten and a second frame partly filled for the extra ones.',
+          keyVocabulary: ['sixteen', 'seventeen', 'eighteen', 'nineteen', 'two tens'],
+        },
+        {
+          index: 3,
+          title: 'Building and Breaking Teen Numbers',
+          text: 'You can build any teen number by starting with 10 and adding ones. Start with a full ten frame, then add counters one at a time: 10 and 1 is 11, 10 and 2 is 12, and so on. You can also break a teen number apart: take 15, remove the ten, and you have 5 ones left. This skill of composing and decomposing with tens is the foundation for adding bigger numbers later.',
+          keyVocabulary: ['compose', 'decompose', 'build', 'foundation'],
+        },
+      ],
+      practice: [
+        { index: 0, question: '14 = 10 + ___', type: 'fill-blank', correctAnswer: '4', hint: 'How many ones are left after you take away the ten?', explanation: '14 = 10 + 4. Fourteen is one ten and four ones.', standardCode: 'K.NBT.1' },
+        { index: 1, question: 'What teen number is 10 + 7?', type: 'short-answer', correctAnswer: '17', hint: 'One ten and seven ones makes ...', explanation: '10 + 7 = 17. Seventeen is one ten and seven more.', standardCode: 'K.NBT.1' },
+        { index: 2, question: '18 = 10 + ___', type: 'fill-blank', correctAnswer: '8', hint: 'Take the ten away from 18.', explanation: '18 = 10 + 8. Eighteen has one ten and eight ones.', standardCode: 'K.NBT.1' },
+        { index: 3, question: 'Which shows 12 as ten and ones?', type: 'multiple-choice', options: ['10 + 1', '10 + 2', '10 + 3', '2 + 2'], correctAnswer: '10 + 2', hint: 'Twelve is one ten and how many ones?', explanation: '12 = 10 + 2. Twelve is one ten and two ones.', standardCode: 'K.NBT.1' },
+        { index: 4, question: 'A full ten frame plus 6 extra counters makes what number?', type: 'short-answer', correctAnswer: '16', hint: 'A full ten frame is 10. Add 6 more.', explanation: '10 + 6 = 16. One ten and six ones makes sixteen.', standardCode: 'K.NBT.1' },
+      ],
+      assessment: {
+        questions: [
+          { question: '15 = 10 + ___', type: 'fill-blank', correctAnswer: '5', standardCode: 'K.NBT.1' },
+          { question: 'What number is 10 + 9?', type: 'short-answer', correctAnswer: '19', standardCode: 'K.NBT.1' },
+          { question: 'How many ones are in 13 after you take away the ten?', type: 'short-answer', correctAnswer: '3', standardCode: 'K.NBT.1' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-describing-shapes',
+    title: 'Describing Shapes',
+    description: 'Correctly name shapes regardless of their orientation or overall size',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Geometry',
+    standardCodes: ['K.G.2'],
+    content: {
+      intro: {
+        title: 'Describing Shapes',
+        text: 'Shapes are everywhere — in buildings, nature, books, and art! Today we will learn to name shapes no matter how big or small they are, or which way they are turned. A triangle is still a triangle even if it is upside down!',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Circles and Squares',
+          text: 'A circle is a perfectly round shape with no corners and no straight sides. Wheels, coins, and clocks are shaped like circles. A square has four equal straight sides and four corners. No matter how you turn a square, it still has four equal sides and four corners, so it is still a square. A small square and a large square are both squares. Size does not change the name of a shape.',
+          keyVocabulary: ['circle', 'square', 'round', 'corner', 'side'],
+          example: 'A pizza is a circle. A window can be a square.',
+        },
+        {
+          index: 1,
+          title: 'Triangles and Rectangles',
+          text: 'A triangle has exactly three straight sides and three corners. Triangles can be tall and thin, short and wide, or tilted to the side — they are all triangles as long as they have three sides. A rectangle has four sides and four corners, with opposite sides the same length. A door is shaped like a rectangle. Remember, a square is a special rectangle where all four sides are equal.',
+          keyVocabulary: ['triangle', 'rectangle', 'opposite sides', 'three sides'],
+        },
+        {
+          index: 2,
+          title: 'Hexagons and Other Shapes',
+          text: 'A hexagon is a shape with six straight sides and six corners. You can see hexagons in honeycombs and some floor tiles. Shapes can also be three-dimensional, like cubes, spheres, cones, and cylinders. A ball is a sphere. A box is a cube. A can is a cylinder. An ice cream cone is a cone! You describe shapes by counting their sides and corners.',
+          keyVocabulary: ['hexagon', 'sphere', 'cube', 'cone', 'cylinder', 'three-dimensional'],
+        },
+        {
+          index: 3,
+          title: 'Shapes in Different Positions',
+          text: 'A shape keeps its name no matter how it is turned or how big it is. If you flip a triangle upside down, it is still a triangle. If you tilt a square so it balances on a corner, it still has four equal sides — it is still a square (some people call this a diamond, but its real name is still a square). The important thing is to look at the sides and corners, not the position.',
+          keyVocabulary: ['flip', 'tilt', 'position', 'orientation', 'rotate'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'How many sides does a triangle have?', type: 'short-answer', correctAnswer: '3', hint: 'The word "tri" means three.', explanation: 'A triangle has 3 sides. The prefix tri means three.', standardCode: 'K.G.2' },
+        { index: 1, question: 'A shape has 4 equal sides and 4 corners. What is it?', type: 'short-answer', correctAnswer: 'square', hint: 'All four sides are the same length.', explanation: 'A square has 4 equal sides and 4 corners.', standardCode: 'K.G.2' },
+        { index: 2, question: 'If you turn a rectangle sideways, what shape is it?', type: 'multiple-choice', options: ['circle', 'triangle', 'rectangle', 'hexagon'], correctAnswer: 'rectangle', hint: 'Turning a shape does not change its name.', explanation: 'A rectangle is still a rectangle no matter which way you turn it.', standardCode: 'K.G.2' },
+        { index: 3, question: 'Which shape is round with no corners?', type: 'multiple-choice', options: ['square', 'triangle', 'circle', 'rectangle'], correctAnswer: 'circle', hint: 'This shape has no straight sides at all.', explanation: 'A circle is round and has no corners or straight sides.', standardCode: 'K.G.2' },
+        { index: 4, question: 'How many sides does a hexagon have?', type: 'short-answer', correctAnswer: '6', hint: 'The word "hex" means six.', explanation: 'A hexagon has 6 sides. Hex means six.', standardCode: 'K.G.2' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'A shape has 3 sides and 3 corners. What is it called?', type: 'short-answer', correctAnswer: 'triangle', standardCode: 'K.G.2' },
+          { question: 'Is an upside-down triangle still a triangle?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', standardCode: 'K.G.2' },
+          { question: 'Which shape has 4 sides but they are not all equal?', type: 'multiple-choice', options: ['square', 'rectangle', 'triangle', 'circle'], correctAnswer: 'rectangle', standardCode: 'K.G.2' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-building-shapes',
+    title: 'Building Shapes',
+    description: 'Compose simple shapes to form larger shapes and build new shapes from components',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Geometry',
+    standardCodes: ['K.G.5', 'K.G.6'],
+    content: {
+      intro: {
+        title: 'Building Shapes',
+        text: 'You can put small shapes together to make bigger shapes! Two triangles can make a square. Small squares can make a rectangle. Building with shapes is like solving a puzzle. Today we will learn how to compose and model shapes using other shapes.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Putting Two Shapes Together',
+          text: 'When you put two shapes side by side, they can make a new shape. Place two squares next to each other and you get a rectangle. Put two triangles together along their longest side and you can make a square or a bigger triangle. Try it with paper cutouts or pattern blocks. Slide the shapes together so their edges line up. Look at the new outline — what shape did you make?',
+          keyVocabulary: ['compose', 'combine', 'edge', 'outline', 'pattern blocks'],
+          example: 'Two small triangles placed together can form one square.',
+        },
+        {
+          index: 1,
+          title: 'Making Shapes from Many Pieces',
+          text: 'You can use more than two shapes to build something bigger. Six triangles can make a hexagon. Four squares in a row make a long rectangle. When you use pattern blocks, you fill in a bigger outline using smaller shapes. There are often many different ways to fill the same outline. Try using different combinations of triangles, squares, and other shapes.',
+          keyVocabulary: ['hexagon', 'fill', 'combination', 'outline'],
+        },
+        {
+          index: 2,
+          title: 'Building Real-World Objects',
+          text: 'You can build pictures of real things using shapes. A house can be made from a square with a triangle on top for the roof. A tree can be a triangle on top of a rectangle trunk. A robot can be made from rectangles and circles. Look around you — can you see how everyday objects are made of simple shapes? Artists and architects use shapes to build amazing things!',
+          keyVocabulary: ['real-world', 'model', 'architect', 'design'],
+        },
+        {
+          index: 3,
+          title: 'Taking Shapes Apart',
+          text: 'Just as you can build big shapes from small ones, you can also break big shapes into smaller pieces. A rectangle can be cut into two squares or two triangles. A hexagon can be split into triangles. When you take shapes apart and put them back together, you learn how shapes relate to each other. This is an important skill for geometry and for solving puzzles.',
+          keyVocabulary: ['decompose', 'cut', 'split', 'relate', 'geometry'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'What shape do two squares side by side make?', type: 'short-answer', correctAnswer: 'rectangle', hint: 'Two squares in a row make a longer shape.', explanation: 'Two squares placed side by side form a rectangle.', standardCode: 'K.G.6' },
+        { index: 1, question: 'How many triangles do you need to make a hexagon?', type: 'short-answer', correctAnswer: '6', hint: 'A hexagon has 6 sides. Think about one triangle for each side.', explanation: 'Six equal triangles can be arranged to fill a hexagon.', standardCode: 'K.G.6' },
+        { index: 2, question: 'Two triangles can make which shape?', type: 'multiple-choice', options: ['circle', 'square', 'hexagon', 'cone'], correctAnswer: 'square', hint: 'Put two right triangles together along their longest side.', explanation: 'Two triangles placed together along their longest side can form a square.', standardCode: 'K.G.6' },
+        { index: 3, question: 'To build a house picture, you might use a square and what shape on top?', type: 'short-answer', correctAnswer: 'triangle', hint: 'The roof of a house looks like this shape.', explanation: 'A triangle on top of a square looks like a simple house with a roof.', standardCode: 'K.G.5' },
+        { index: 4, question: 'Can a rectangle be split into two triangles?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', hint: 'Think about cutting a rectangle from corner to corner.', explanation: 'Yes! If you cut a rectangle diagonally from one corner to the opposite corner, you get two triangles.', standardCode: 'K.G.6' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'What shape can you make with 2 triangles?', type: 'multiple-choice', options: ['circle', 'square', 'hexagon'], correctAnswer: 'square', standardCode: 'K.G.6' },
+          { question: 'Four squares arranged in a row make what shape?', type: 'short-answer', correctAnswer: 'rectangle', standardCode: 'K.G.6' },
+          { question: 'Name a shape you could use for a roof on a house picture.', type: 'short-answer', correctAnswer: 'triangle', standardCode: 'K.G.5' },
+        ],
+      },
+    },
+  },
+  {
+    slug: 'gradeK-math-classifying-and-counting',
+    title: 'Classifying and Counting',
+    description: 'Classify objects into given categories and count the number in each category',
+    subject: 'math',
+    grade: 0,
+    gradeBand: 'k5',
+    topicCluster: 'Measurement & Data',
+    standardCodes: ['K.MD.3'],
+    content: {
+      intro: {
+        title: 'Classifying and Counting',
+        text: 'Sorting things into groups is called classifying. You can sort by color, shape, size, or any other attribute. After you sort, you can count how many are in each group. This helps you organize information and compare groups.',
+      },
+      segments: [
+        {
+          index: 0,
+          title: 'Sorting by One Attribute',
+          text: 'An attribute is a feature of an object, like its color, shape, or size. To classify, pick one attribute and sort the objects into groups. If you have red, blue, and green buttons, you can sort them by color: put all the red ones together, all the blue ones together, and all the green ones together. Now you have three groups! Each object goes in exactly one group.',
+          keyVocabulary: ['classify', 'attribute', 'sort', 'group', 'feature'],
+          example: 'Sort crayons by color: red group, blue group, yellow group.',
+        },
+        {
+          index: 1,
+          title: 'Counting in Each Category',
+          text: 'After you sort objects into groups, count how many are in each group. If you sorted 12 buttons and found 5 red, 4 blue, and 3 green, you now have data! You can compare the groups: the red group has the most because 5 is greater than 4 and 3. The green group has the fewest. Counting after sorting helps us understand our collection of objects.',
+          keyVocabulary: ['category', 'count', 'data', 'most', 'fewest'],
+        },
+        {
+          index: 2,
+          title: 'Different Ways to Sort',
+          text: 'The same group of objects can be sorted in different ways. Imagine you have blocks that are different colors and different shapes. You could sort by color: all reds together, all blues together. Or you could sort by shape: all circles together, all squares together. The groups you get depend on which attribute you choose. There is no single right way — it depends on the question you are trying to answer.',
+          keyVocabulary: ['different ways', 'choose', 'attribute', 'depends'],
+        },
+        {
+          index: 3,
+          title: 'Recording and Comparing',
+          text: 'After counting each group, you can record your results. You might write the category name and the number next to it, or color in boxes on a chart. For example: red = 5, blue = 4, green = 3. Now you can answer questions like: which group has the most? How many more red than green? How many objects in all? Recording data helps us remember and share what we found.',
+          keyVocabulary: ['record', 'chart', 'compare', 'how many more', 'in all'],
+        },
+      ],
+      practice: [
+        { index: 0, question: 'You have 3 apples, 5 bananas, and 2 oranges. Which fruit group has the most?', type: 'short-answer', correctAnswer: 'bananas', hint: 'Compare 3, 5, and 2. Which number is greatest?', explanation: 'Bananas have the most because 5 is greater than 3 and 2.', standardCode: 'K.MD.3' },
+        { index: 1, question: 'What does it mean to classify objects?', type: 'multiple-choice', options: ['Count to 100', 'Sort them into groups', 'Add them together', 'Draw a picture'], correctAnswer: 'Sort them into groups', hint: 'Classify means to sort or organize.', explanation: 'Classifying means sorting objects into groups based on an attribute like color or shape.', standardCode: 'K.MD.3' },
+        { index: 2, question: 'You sorted shapes: 4 circles, 6 squares, 2 triangles. How many shapes in all?', type: 'short-answer', correctAnswer: '12', hint: 'Add all the groups together: 4 + 6 + 2.', explanation: '4 + 6 + 2 = 12. There are 12 shapes in all.', standardCode: 'K.MD.3' },
+        { index: 3, question: 'You sorted animals by type: 7 dogs and 3 cats. How many more dogs than cats?', type: 'short-answer', correctAnswer: '4', hint: 'Subtract: 7 minus 3.', explanation: '7 − 3 = 4. There are 4 more dogs than cats.', standardCode: 'K.MD.3' },
+        { index: 4, question: 'Which is an attribute you could use to sort buttons?', type: 'multiple-choice', options: ['color', 'name', 'age', 'birthday'], correctAnswer: 'color', hint: 'Think about what you can see on a button.', explanation: 'Color is an attribute of buttons. You can sort buttons into groups by color.', standardCode: 'K.MD.3' },
+      ],
+      assessment: {
+        questions: [
+          { question: 'You have 6 red blocks, 3 blue blocks, and 1 yellow block. Which color has the fewest?', type: 'short-answer', correctAnswer: 'yellow', standardCode: 'K.MD.3' },
+          { question: '5 cats, 5 dogs. Are the groups equal?', type: 'multiple-choice', options: ['Yes', 'No'], correctAnswer: 'Yes', standardCode: 'K.MD.3' },
+          { question: 'You sorted 15 beads by color: 8 red and the rest blue. How many blue?', type: 'short-answer', correctAnswer: '7', standardCode: 'K.MD.3' },
+        ],
+      },
+    },
+  },
+]
