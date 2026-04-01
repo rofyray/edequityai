@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { ClayCard, ClayButton, ClayInput } from '@/components/clay'
 import { createClient } from '@/lib/supabase/client'
@@ -8,7 +8,7 @@ import { showToast, friendlyError } from '@/lib/toast'
 import Link from 'next/link'
 import type { UserRole } from '@/lib/auth/types'
 
-export default function RegisterPage() {
+function RegisterPageContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const initialRole = (['student', 'teacher', 'parent'].includes(searchParams.get('role') || '')
@@ -221,5 +221,13 @@ export default function RegisterPage() {
         </Link>
       </p>
     </ClayCard>
+  )
+}
+
+export default function RegisterPage() {
+  return (
+    <Suspense>
+      <RegisterPageContent />
+    </Suspense>
   )
 }

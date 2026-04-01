@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { ClayCard, ClayButton } from '@/components/clay'
 import { createClient } from '@/lib/supabase/client'
@@ -14,7 +14,7 @@ function maskEmail(email: string): string {
   return `${visible}${'*'.repeat(Math.max(local.length - 1, 2))}@${domain}`
 }
 
-export default function VerifyEmailPage() {
+function VerifyEmailPageContent() {
   const searchParams = useSearchParams()
   const email = searchParams.get('email') || ''
   const [resending, setResending] = useState(false)
@@ -85,5 +85,13 @@ export default function VerifyEmailPage() {
         </p>
       </div>
     </ClayCard>
+  )
+}
+
+export default function VerifyEmailPage() {
+  return (
+    <Suspense>
+      <VerifyEmailPageContent />
+    </Suspense>
   )
 }
